@@ -26,3 +26,53 @@ button:focus
  outline: none
 .slick-slide:focus
  outline: none
+.btn-o
+ display: flex
+ justify-content: center
+ align-items: center
+ font-weight: 500
+ font-size: 13px
+ line-height: 16px
+ color: #DB6A01
+ border: 1px solid #DB6A01
+ border-radius: 50px
+ width: 175px
+ height: 46px
+ &:hover
+  cursor: pointer
+  background: linear-gradient(180deg, #FFAA5D 0%, #DB6A02 100%)
+  color: #ffffff
+  border: 0
+.btn
+ background: linear-gradient(180deg, #FFAC5F 0%, #DB6A01 100%)
+ box-shadow: 0px 3px 0px #A24E00
+ border-radius: 70px
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 520px
+ height: 75px
+ font-weight: bold
+ font-size: 16px
+ line-height: 45px
+ text-align: center
+ color: #FFFFFF
+ position: relative
+ &::before
+  content: ""
+  position: absolute
+  display: block
+  z-index: -1
+  width: 80%
+  height: 80%
+  bottom: -20%
+  left: 10%
+  background: linear-gradient(180deg, #FFAC5F 0%, #DB6A01 100%)
+  opacity: 0.8
+  filter: blur(50px)
+  transition: all 0.6s
+  border-radius: 60px
+ &:hover
+  box-shadow: none
+  &::before
+   height: 0

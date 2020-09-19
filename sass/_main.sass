@@ -1,7 +1,33 @@
 .main
  padding-top: 30px
  position: relative
- overflow: hidden
+ &-before
+  position: absolute
+  bottom: -180px
+  left: -40px
+  z-index: 2
+ &-after
+  position: absolute
+  background: #F9F9F9
+  top: -700px
+  right: -720px
+  width: 1326px
+  border-radius: 50%
+  height: 1551px
+  z-index: -1
+ .container
+  position: relative
+ &-img
+  pointer-events: none
+  position: absolute
+  top: 0
+  right: -170px
+  width: 630px
+  height: 600px
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 3
  &-top
   width: 177px
   height: 44px
@@ -52,6 +78,8 @@
   display: flex
   align-items: center
   margin-bottom: 35px
+  position: relative
+  z-index: 3
   &-text
    font-weight: 300
    margin-right: 15px
@@ -87,7 +115,7 @@
    line-height: 29px
  &-btn
   position: relative
-  z-index: 1
+  z-index: 3
   &::after
    content: ""
    width: 108px
@@ -108,6 +136,8 @@
    display: flex
    align-items: center
   &-block
+   position: relative
+   z-index: 3
    display: flex
    align-items: center
    margin-right: 35px

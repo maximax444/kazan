@@ -35,6 +35,7 @@
    border: 1px solid #E6E6E6
    border-radius: 100px
    width: 270px
+   max-width: 32%
    height: 50px
    display: flex
    justify-content: center
@@ -52,10 +53,29 @@
   &-btn
    width: 260px
    height: 75px
-   margin-right: 35px
   &-text
    max-width: 190px
    font-size: 14px
    line-height: 20px
    color: #000000
    opacity: 0.3
+@media(max-width: 991px)
+ .cards
+  &-top
+   flex-wrap: wrap
+   &-block
+    width: 33%
+    margin-bottom: 15px
+  &-main
+   display: block
+   &-block
+    margin: 0 auto
+    margin-bottom: 10px
+    max-width: 100%
+@media(max-width: 575px)
+ .cards
+  padding: 35px 0
+  &-top
+   margin-bottom: 25px
+   &-block
+    width: 50%

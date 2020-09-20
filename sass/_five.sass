@@ -1,7 +1,7 @@
 .five
  padding-top: 75px
  padding-bottom: 105px
- background: url('../img/five-bg.jpg') center right no-repeat
+ background: #0D0D0D url('../img/five-bg.jpg') center right no-repeat
  position: relative
  z-index: 1
  &-title
@@ -34,3 +34,29 @@
   margin-top: 35px
   width: 360px
   height: 75px
+@media(max-width: 575px)
+ .five
+  background: #0D0D0D url('../img/five-bg-mob.png') top center no-repeat
+  background-size: contain
+  padding-top: 280px
+  padding-bottom: 48px
+  &-title
+   text-align: left
+   margin-bottom: 34px
+   font-size: 20px
+   line-height: 25px
+  &-block
+   margin-bottom: 30px
+   &-img
+    width: 59px
+    height: 59px
+    margin-right: 15px
+   &-text
+    max-width: 210px
+    font-size: 14px
+    line-height: 20px
+  &-btn
+   margin-top: 10px
+   max-width: 100%
+   height: 64px
+   font-size: 14px

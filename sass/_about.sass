@@ -2,6 +2,20 @@
  padding-top: 100px
  padding-bottom: 95px
  background: #F9F9F9
+ position: relative
+ &1
+  position: absolute
+  left: 100px
+  top: 100px
+ &2
+  position: absolute
+  top: 270px
+  right: 100px
+ &3
+  position: absolute
+  left: -40px
+  bottom: -250px
+  z-index: 2
  &-title
   max-width: 650px
   margin: 0 auto
@@ -10,8 +24,26 @@
   font-size: 35px
   line-height: 51px
   color: #000000
+  position: relative
   span
    border-bottom: 1px solid rgba(0, 0, 0, 0.47)
+  &-drop
+   width: 250px
+   font-size: 13px
+   line-height: 20px
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+   border-radius: 5px
+   padding: 10px
+   font-weight: 400
+   text-align: left
+   position: absolute
+   left: 240px
+   top: 100%
+   background-color: #fff
+   display: none
+ &-title:hover
+  .about-title-drop
+   display: block
  &-subtitle
   max-width: 685px
   margin: 0 auto
@@ -56,6 +88,13 @@
  &-main
   position: relative
   z-index: 1
+  &-old
+   position: absolute
+   top: 25px
+   right: 25px
+   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2)
+   border-radius: 50%
+   display: flex
   &-wrap
    margin-top: 50px
    width: 500px
@@ -91,3 +130,54 @@
    height: 75px
    margin: 0 auto
    margin-top: 28px
+@media(max-width: 1400px)
+ .about
+  &1
+   left: -50px
+@media(max-width: 1199px)
+ .about
+  &1, &2, &3
+   display: none
+@media(max-width: 991px)
+ .about
+  &-wrap
+   flex-wrap: wrap
+  &-main
+   order: -1
+   margin: 0 auto
+   margin-bottom: 40px
+   &-wrap
+    width: 100%
+   &-img
+    margin: 0 auto
+@media(max-width: 575px)
+ .about
+  padding: 45px 0
+  &-title
+   font-size: 20px
+   line-height: 25px
+   margin-bottom: 25px
+   &-drop
+    left: 0px
+  &-subtitle
+   font-size: 14px
+   line-height: 25px
+   margin-bottom: 30px
+  &-main
+   &-wrap
+    width: 290px
+    height: 290px
+   &-old
+    width: 70px
+    height: 70px
+    img
+     max-width: 100%
+   &-play
+    width: 70px
+    height: 70px
+  &-col
+   width: 100%
+  &-block
+   margin-bottom: 20px
+   &-img
+    margin-bottom: 10px

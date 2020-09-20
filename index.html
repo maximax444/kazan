@@ -6,6 +6,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Казаны</title>
  <link rel="stylesheet" href="css/style.min.css">
+ <link rel="stylesheet" href="slick/slick-theme.css">
+ <link rel="stylesheet" href="slick/slick.css">
  <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 
@@ -33,7 +35,7 @@
       <div class="header-phone">
        <div class="header-block-img"><img src="img/header-phone.png" alt=""></div>
        <div class="header-phone-text">
-        Заказы принимаем круглосуточно
+        <span>Заказы принимаем круглосуточно</span>
         <a href="tel:+375 29 360-45-77" class="header-phone-num">+375 29 360-45-77</a>
         <a href="" class="header-phone-call">Заказать звонок</a>
        </div>
@@ -43,10 +45,12 @@
        <a href="" class="header-soc-block"><img src="img/header-wa.png" alt=""></a>
        <a href="" class="header-soc-block"><img src="img/header-viber.png" alt=""></a>
       </div>
+      <a href="" class="header-mob"><img src="img/header-mob.png" alt=""></a>
      </div>
     </div>
    </div>
    <div class="nav">
+    <a href="" class="nav-close">&#10006;</a>
     <div class="container">
      <div class="nav-wrap">
       <div class="nav-menu">
@@ -61,7 +65,7 @@
       </div>
       <div class="nav-right">
        <a href="" class="btn-o nav-right-btn">Подобрать казан</a>
-       <a href="" class="nav-cart"><img src="img/nav-cart.png" alt=""></a>
+       <!--<a href="" class="nav-cart"><img src="img/nav-cart.png" alt=""></a>-->
       </div>
      </div>
     </div>
@@ -70,7 +74,14 @@
     <div class="main-before"><img src="img/main-before.png" alt=""></div>
     <div class="main-after"></div>
     <div class="container">
-     <div class="main-img"><img src="img/main-img.png" alt=""></div>
+     <div class="main-img">
+      <div class="main-img-dop">
+       <div class="main-img-dop-wrap">
+        от <span>70</span> рублей
+       </div>
+      </div>
+      <img src="img/main-img.png" alt="">
+     </div>
      <div class="main-top">Оригинальные</div>
      <h1 class="main-title"><b>Узбекские казаны</b> с доставкой <br> по Минску за 4 часа</h1>
      <div class="main-subtitle">Отправим в любую точку РБ</div>
@@ -205,14 +216,20 @@
      </div>
      <div class="cards-bottom">
       <a href="" class="cards-bottom-btn btn">Купить в рассрочку</a>
-      <div class="cards-bottom-text">*Акции при покупке картой рассрочки “халва” не распространяются </div>
+
      </div>
     </div>
    </div>
    <div class="about">
+    <div class="about1"><img src="img/aboutt1.png" alt=""></div>
+    <div class="about2"><img src="img/aboutt2.png" alt=""></div>
+    <div class="about3"><img src="img/aboutt3.png" alt=""></div>
     <div class="container">
      <h2 class="about-title">Оригинальные Узбекские казаны
-      <span>Grand Metall Invest</span> <img src="img/about-title-info.png" alt=""></h2>
+      <span>Grand Metall Invest</span> <img src="img/about-title-info.png" alt="">
+      <div class="about-title-drop">ООО «Гранд-Металл» – ведущая компания на рынке российского цветного металлопроката.
+       ООО «Гранд-Металл» зарекомендовал себя надежным поставщиком на рынке цветной металлургии.</div>
+     </h2>
      <div class="about-subtitle">Изготовлены из настоящего чугуна. Не выделяют вредных испарений и безопасны для
       здоровья Вас, и Вашей семьи!</div>
      <div class="about-dop">
@@ -237,7 +254,7 @@
       <div class="about-main">
        <div class="about-main-wrap">
         <div class="about-main-img"><img src="img/about-main-img.png" alt=""></div>
-        <div class="about-main-old"></div>
+        <div class="about-main-old"><img src="img/about-old.png" alt=""></div>
         <a href="" class="about-main-play"><img src="img/about-main-play.png" alt=""></a>
        </div>
        <a href="" class="btn about-main-btn">Перейти в каталог</a>
@@ -621,6 +638,342 @@
      </div>
     </div>
    </div>
+   <div class="reviews">
+    <div class="reviews-after"><img src="img/rev-after.png" alt=""></div>
+    <div class="reviews-before"><img src="img/rev-before.png" alt=""></div>
+    <div class="container">
+     <h2 class="reviews-title">Отзывы покупателей</h2>
+     <div class="reviews-slider">
+      <div class="reviews-arrow reviews-prev">
+       <svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M0.646446 4.90336C0.451185 4.7081 0.451185 4.39151 0.646446 4.19625L3.82843 1.01427C4.02369 0.819009 4.34027 0.819009 4.53553 1.01427C4.7308 1.20953 4.7308 1.52612 4.53553 1.72138L1.70711 4.5498L4.53553 7.37823C4.7308 7.57349 4.7308 7.89008 4.53553 8.08534C4.34027 8.2806 4.02369 8.2806 3.82843 8.08534L0.646446 4.90336ZM23 5.0498H1V4.0498H23V5.0498Z"
+         fill="#EF8D34" />
+       </svg>
+      </div>
+      <div class="reviews-arrow reviews-next">
+       <svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M22.3536 4.90336C22.5488 4.7081 22.5488 4.39151 22.3536 4.19625L19.1716 1.01427C18.9763 0.819009 18.6597 0.819009 18.4645 1.01427C18.2692 1.20953 18.2692 1.52612 18.4645 1.72138L21.2929 4.5498L18.4645 7.37823C18.2692 7.57349 18.2692 7.89008 18.4645 8.08534C18.6597 8.2806 18.9763 8.2806 19.1716 8.08534L22.3536 4.90336ZM0 5.0498H22V4.0498H0V5.0498Z"
+         fill="#EF8D34" />
+       </svg>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva1.png" alt=""></div>
+          <div class="reviews-autor-name">Марк <br> Островский</div>
+         </div>
+         <div class="reviews-subtitle">Это наверное лучший подарок, который я делал отцу)))</div>
+         <div class="reviews-text">
+          Моему отцу на юбилей друзья задарили большой тандыр для дачи. У тандыра в комплекте шел переходник на
+          горловину для казана. В этом году я решил подарить отцу казан - выбрал 12-ти литровый. Это, наверное, лучший
+          подарок, который я делал отцу))) За этот сезон чего только в нем не готовили - и лагман и шурпу и плов, само
+          собой, и просто картошку с грибами либо с мясом - это просто какая то фантастика. Я не знаю, как это
+          объяснить, почему настолько вкусно в казане получается))
+         </div>
+        </div>
+        <div class="reviews-img"><img src="img/rev1.png" alt=""></div>
+       </div>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva2.png" alt=""></div>
+          <div class="reviews-autor-name">Антон <br>
+           Казаков</div>
+         </div>
+         <div class="reviews-subtitle">Настоящие Узбекские казаны. Покупкой очень довольны!</div>
+         <div class="reviews-text">Взяли на дачу 8 литровый - очень качественно сделан, аккуратно. Можно, наверное, даже
+          побольше объем брать на дачу - если нагрянут гости в большом количестве</div>
+        </div>
+        <div class="reviews-img"><img src="img/rev2.png" alt=""></div>
+       </div>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva3.png" alt=""></div>
+          <div class="reviews-autor-name">Ольга <br> Новикова</div>
+         </div>
+         <div class="reviews-subtitle">Заказали в обед, уже вечером нам доставили наш
+          казан.</div>
+         <div class="reviews-text">Подарила мужу казан на день варенье, доволен как слон! Спасибо что так оперативно
+          привезли мой заказ!</div>
+        </div>
+        <div class="reviews-img"><img src="img/rev3.png" alt=""></div>
+       </div>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva4.png" alt=""></div>
+          <div class="reviews-autor-name">Стас <br>
+           Ананьев</div>
+         </div>
+         <div class="reviews-subtitle">Я очень доволен покупкой! Цена хорошая и доставили за 2 дня!</div>
+         <div class="reviews-text">У меня был алюминиевый еще родительский казан для плиты - с плоским дном. Но в нем
+          как-то всегда не очень получался плов - слипается в кашу. Я думал, что рис не тот. Оказалось, что далеко не
+          все от риса зависит. В моем алюминиевом греется хорошо только дно, а стенки не прогреваются. Правильный казан
+          должен по всему объему хорошо прогреваться. В итоге заказал здесь чугунный казан на 4,5 литра. Уже два раза в
+          нем готовил - совсем другой коленкор! реально весь казан прогревается равномерно, потому что стенки толстые и
+          материал - чугун. Плов получается гораздо лучше.</div>
+        </div>
+        <div class="reviews-img"><img src="img/rev4.png" alt=""></div>
+       </div>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva5.png" alt=""></div>
+          <div class="reviews-autor-name">Иван <br>
+           Якушев</div>
+         </div>
+         <div class="reviews-subtitle">Казаном очень доволен.</div>
+         <div class="reviews-text">В выходные приготовили плов в новом казане. После покупки решили собраться всей
+          семьей и устроить маленький праздник. Приготовление плова получилось на удивление очень легким и без лишних
+          хлопот.</div>
+        </div>
+        <div class="reviews-img"><img src="img/rev5.png" alt=""></div>
+       </div>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva6.png" alt=""></div>
+          <div class="reviews-autor-name">Егор <br>
+           Кравцов</div>
+         </div>
+         <div class="reviews-subtitle">Вкусно, а главное просто!</div>
+         <div class="reviews-text">Купил казан по совету друзей и открыл для себя что-то новое в приготовлении пищи.
+          Просто положи в этот чугунный чан и можешь тушить все что угодно. Я, как любитель отдохнуть на природе оценил
+          эту простоту и универсальность.</div>
+        </div>
+        <div class="reviews-img"><img src="img/rev6.png" alt=""></div>
+       </div>
+      </div>
+     </div>
+     <a href="" class="btn reviews-btn">Оставить отзыв</a>
+    </div>
+   </div>
+   <div class="gift">
+    <div class="container">
+     <h2 class="gift-title">Хотите заказать казан в подарок?</h2>
+     <div class="gift-subtitle">Упакуем Ваш казан в подарочную упаковку,
+      добавим Ваши поздравления</div>
+     <div class="gift-wrap">
+      <form class="gift-form">
+       <div class="gift-form-title">Оставьте заявку и сделайте подарок по специальной цене*</div>
+       <div class="gift-form-prize">
+        <div class="gift-form-prize-img"><img src="img/gift-prize.png" alt=""></div>
+        <div class="gift-form-prize-text">+ Бесплатный подбор</div>
+       </div>
+       <label class="gift-form-main">
+        <div class="gift-form-label">Введите ваш номер телефона:</div>
+        <input type="tel" class="gift-form-input" name="giftPhone" placeholder="+ 375 (__) ___ - __ - __" required>
+       </label>
+       <button class="btn gift-form-btn">Оставить заявку и узнать</button>
+       <div class="gift-form-small">*Специальные цены, на покупку в подарок</div>
+      </form>
+      <div class="gift-img"><img src="img/gift-img.png" alt=""></div>
+     </div>
+    </div>
+   </div>
+   <div class="how">
+    <div class="how-before"><img src="img/how-before.png" alt=""></div>
+    <div class="container">
+     <h2 class="how-title">Как мы работаем</h2>
+     <div class="how-subtitle">Всего 1 ваше действие и вы получите оригинальный
+      чугунный казан по отличной цене</div>
+     <div class="how-wrap">
+      <div class="how-block">
+       <div class="how-img"><img src="img/how1.png" alt="">
+        <div class="how-num">01</div>
+       </div>
+       <div class="how-text">
+        <div class="how-dop">Ваше действие</div>
+        <div class="how-name">Выбираете казан или заказываете подбор</div>
+        <div class="how-descr">С вами свяжется Ваш персональный
+         менеджер для оформления заказа</div>
+       </div>
+      </div>
+      <div class="how-block">
+       <div class="how-img"><img src="img/how2.png" alt="">
+        <div class="how-num">02</div>
+       </div>
+       <div class="how-text">
+        <div class="how-name">Доставка к конкретному
+         времени</div>
+        <div class="how-descr">Курьер доставит Ваш заказ “до дверей”. Доставка по РБ - в течение 1-го дня с момента
+         заказа, по Минску - за 4 часа.</div>
+       </div>
+      </div>
+      <div class="how-block">
+       <div class="how-img"><img src="img/how3.png" alt="">
+        <div class="how-num">03</div>
+       </div>
+       <div class="how-text">
+        <div class="how-name">Получаете и оплачиваете казан</div>
+        <div class="how-descr">Оплата производится после получения и проверки заказа</div>
+       </div>
+      </div>
+      <div class="how-block">
+       <div class="how-img"><img src="img/how4.png" alt="">
+        <div class="how-num">04</div>
+       </div>
+       <div class="how-text">
+        <div class="how-name">Наслаждаетесь вкусной готовкой на своем казане</div>
+        <div class="how-descr">Неповторимый вкус и новые
+         рецепты, вам обеспечены</div>
+       </div>
+      </div>
+     </div>
+     <a href="" class="how-btn btn">Подобрать казан и получить скидку с подарком</a>
+    </div>
+   </div>
+   <div class="questions">
+    <div class="questions-before"><img src="img/questions-before.png" alt=""></div>
+    <div class="questions-after"><img src="img/questions-after.png" alt=""></div>
+    <div class="container">
+     <h2 class="questions-title">Частые вопросы</h2>
+     <div class="questions-main">
+      <div class="questions-main-title">Как подготовить казан к первому использованию?</div>
+      <b>1.</b> Во время производства на стенках казана остается производственное масло. Чтобы очистить и правильно
+      подготовить
+      казан к использованию его необходимо раскалить на слабом огне в течении получаса.
+      <br><br>
+      <b>2.</b> Наполните казан одним литром растительного масла и продолжайте его прокаливать. Наклоняйте в разные
+      стороны
+      казан, чтобы всего его стенки покрылись горячим маслом. Проделайте эту процедуру в течении получаса еще раз.
+      <br><br>
+      <b>3.</b> Уберите казан с огня, дайте маслу и поверхности остыть. Вылейте остатки масла и протрите казан насухо
+      марлей
+      или бумажным полотенцем. Жировая прослойка, которая образовалась в результате подготовки - правильное состояние
+      покрытия казана.
+      <br><br>
+      <b>4.</b> При редкой эксплуатации казана желательно повторите эти действия, чтобы восстановить рабочую
+      поверхность.
+     </div>
+     <div class="questions-wrap">
+      <div class="questions-col">
+       <div class="questions-block">
+        <div class="questions-block-title">Какой объем казана мне необходим?</div>
+        <div class="questions-block-cont">
+         Умножьте количество гостей на два. <br>
+         К этому результату добавьте два литра. <br>
+         В таком случае содержимое казана можно спокойно перемешивать. <br>
+         Даже небольшие порции еды лучше приготовить в казанах большего объема блюда получаются более вкусные и сытные.
+        </div>
+       </div>
+       <div class="questions-block">
+        <div class="questions-block-title">Какие стандарты качества вашей продукции?</div>
+        <div class="questions-block-cont">
+         Качество наших казанов подтверждено декларацией соответствия. Мы работаем напрямую с производителем из г.
+         Наманган (Узбекистан), что дает нам отслеживать качество наших товаров.
+        </div>
+       </div>
+       <div class="questions-block">
+        <div class="questions-block-title">С каким дном бывают казаны у вас?</div>
+        <div class="questions-block-cont">
+         Варианты исполнения дна казана: круглый или плоский. <br>
+         Казаны с плоским и круглым дном внутри одинаковые. <br>
+         Модели с плоским дном устойчивые, что дает удобство в процессе приготовления. <br>
+         Казаны с плоским дном пользуются большим спросом, чем модели с круглым дном. <br>
+         Размер площадки казана с плоским дном 15-16 см. <br>
+         Внутри казан идёт круглый, как и в стандартном казане.
+        </div>
+       </div>
+       <div class="questions-block">
+        <div class="questions-block-title">Подходят ли ваши казаны для дома?</div>
+        <div class="questions-block-cont">
+         Казан можно использовать дома и на природе. <br>
+         Модели для использования дома идут с плоским дном. <br>
+         Подходят в том числе и для индукционных плит.
+        </div>
+       </div>
+      </div>
+      <div class="questions-col">
+       <div class="questions-block">
+        <div class="questions-block-title">Какая крышка у казана?</div>
+        <div class="questions-block-cont">
+         Казан идет в комплекте с алюминиевой крышкой. Алюминиевая крышка: легкая, плотно садиться в паз казана. <br>
+         В отличие от чугунной крышки, алюминиевая не окисляется, не забирает тепло и не увеличивает конечную стоимость
+         казана.
+        </div>
+       </div>
+       <div class="questions-block">
+        <div class="questions-block-title">Какая внутренняя поверхность казана?</div>
+        <div class="questions-block-cont">
+         Внутренняя поверхность казана идеально гладкая. Казаны шлифуют на заводе. <br>
+         Так же на внутреннюю поверхность казана нанесен антипригарный слой.
+        </div>
+       </div>
+       <div class="questions-block">
+        <div class="questions-block-title">Какое отличие ваших казанов от других?</div>
+        <div class="questions-block-cont">
+         Отличительной особенностью Узбекских казанов является толстая стенка, которая в свою очередь играет важную роль
+         в процессе приготовления. <br>
+         Толстая стенка будет долго поддерживать температуру казана. <br>
+         В такой посуде приготовленное блюдо будет томиться.
+        </div>
+       </div>
+       <div class="questions-block">
+        <div class="questions-block-title">Как правильно ухаживать за казаном?</div>
+        <div class="questions-block-cont">
+         Казан можно использовать дома и на природе. <br>
+         Модели для использования дома идут с плоским дном. <br>
+         Подходят в том числе и для индукционных плит. <br>
+         После приготовления вкусных блюд казан необходимо помыть. <br>
+         Ни в коем случае нельзя его мыть моющими средствами. Необходимо будет обойтись простой водой и мягкой щеткой,
+         чтобы не повредить антипригарную поверхность казана. Вымытый казан необходимо вытереть бумажным полотенцем и
+         просушить на открытом воздухе, для предотвращения дальнейшего образования ржавчины на поверхности. <br>
+         После того, как казан будет сухим необходимо при помощи полотенца натереть растительным маслом до состояния
+         блеска. <br>
+         Важно не переборщить с количеством масла, таким образом вы создадите естественную жировую пленку, которая
+         заметно сделает в будущем приготовление на казане более простым из-за естественного покрытия.
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="contacts">
+    <div id="map"></div>
+    <div class="contacts-cont">
+     <h2 class="contacts-title">Свяжитесь с нами любым способом</h2>
+     <div class="contacts-block">
+      <div class="contacts-block-img"><img src="img/contacts1.png" alt=""></div>
+      <div class="contacts-block-text">
+       <div class="contacts-block-top">Телефон</div>
+       <a href="tel:+375255020077" class="contacts-block-phone">+375 25 <b> 502-00-77</b></a>
+       <a href="" class="contacts-block-link">Заказать звонок</a>
+      </div>
+      <div class="contacts-block-soc">
+       <div class="header-soc">
+        <a href="" class="header-soc-block"><img src="img/header-tg.png" alt=""></a>
+        <a href="" class="header-soc-block"><img src="img/header-wa.png" alt=""></a>
+        <a href="" class="header-soc-block"><img src="img/header-viber.png" alt=""></a>
+       </div>
+      </div>
+     </div>
+     <div class="contacts-block">
+      <div class="contacts-block-img"><img src="img/contacts2.png" alt=""></div>
+      <div class="contacts-block-text">
+       <div class="contacts-block-top">Адрес точки самовывоза</div>
+       <div class="contacts-block-adress">Минск, ул. Володько д. 18, офис 105а <br> <a
+         href="mailto:night___life@mail.ru">night___life@mail.ru</a></div>
+       <div class="contacts-block-small">Заказы принимаем круглосуточно и без выходных</div>
+      </div>
+     </div>
+     <a href="" class="btn contacts-btn">Подобрать казан</a>
+    </div>
+   </div>
    <div class="footer">
     <div class="container">
      <div class="footer-wrap">
@@ -630,12 +983,18 @@
        <a href="">Реквизиты</a>
        <a href="">Политика конфиденциальности</a>
       </div>
-      <a href="" class="footer-leadme"><img src="img/footer-leadme.png" alt=""></a>
+      <a href="https://leadme.agency/" class="footer-leadme"><img src="img/footer-leadme.png" alt=""></a>
      </div>
     </div>
    </div>
   </div>
  </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="slick/slick.min.js"></script>
+ <script src="js/jquery.inputmask.js"></script>
+ <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"
+  type="text/javascript"></script>
+ <script src="js/main.js"></script>
 </body>
 
 </html>

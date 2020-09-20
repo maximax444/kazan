@@ -16,3 +16,48 @@
    text-decoration-line: underline
    color: #FFFFFF
    opacity: 0.5
+@media(max-width: 1199px)
+ .footer
+  &-menu
+   width: 440px
+@media(max-width: 991px)
+ .footer
+  &-wrap
+   height: 100px
+  &-menu
+   width: 360px
+   a
+    font-size: 14px
+  &-logo, &-leadme
+   width: 150px
+   img
+    max-width: 100%
+@media(max-width: 767px)
+ .footer
+  &-wrap
+   flex-wrap: wrap
+   height: auto
+   padding: 20px 0
+@media(max-width: 575px)
+ .footer
+  position: relative
+  &-wrap
+   padding-bottom: 10px
+  &-leadme
+   position: absolute
+   right: 15px
+   top: 10px
+   width: 130px
+  &-logo
+   width: 130px
+   padding-top: 
+  &-menu
+   flex-wrap: wrap
+   width: 100%
+   justify-content: flex-start
+   padding-top: 15px
+   a
+    font-size: 12px
+    margin-right: 28px
+    line-height: normal
+    margin-bottom: 15px

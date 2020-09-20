@@ -82,6 +82,8 @@
    color: #DB6A01
    &:hover
     opacity: 0.8
+ &-mob
+  display: none
 .nav
  &-wrap
   display: flex
@@ -116,3 +118,98 @@
   &:hover
    background: linear-gradient(180deg, #FFAA5D 0%, #DB6A02 100%)
    border: 0
+ &-close
+  display: none
+@media(max-width: 1199px)
+ .header
+  &-block-text
+   font-size: 10px
+  &-logo
+   width: 150px
+   img
+    max-width: 100%
+ .nav
+  &-menu
+   width: 780px
+@media(max-width: 991px)
+ .header
+  &-logo
+   margin-right: 10px
+  &-wrap
+   height: 100px
+  .header-soc
+   display: none
+  &-phone
+   &-num
+    font-size: 16px
+   &-text
+    margin-left: 0
+  &-block
+   &-img
+    margin-right: 5px
+    width: 25px
+    height: 25px
+    img
+     max-width: 60%
+     max-height: 60%
+ .nav
+  &-menu
+   width: 550px
+   a
+    font-size: 11px
+    line-height: 55px
+@media(max-width: 767px)
+ .nav
+  display: none
+  &-close
+   font-size: 24px
+   position: absolute
+   top: 15px
+   right: 15px
+   display: block
+  &-right
+   display: none
+  &-active
+   display: block
+   height: 100vh
+   width: 80vw
+   position: fixed
+   right: 0
+   top: 0
+   background-color: #fff
+   padding: 42px 25px 25px
+   z-index: 10
+  &-menu
+   display: block
+   a
+    display: block
+    font-size: 16px 
+    margin-bottom: 15px
+    line-height: normal
+ .header
+  &-mob
+   display: block
+   z-index: 6
+  &-block
+   display: none
+@media(max-width: 575px)
+ .header
+  border: 0
+  &-block
+   &-img
+    display: none
+  &-phone
+   span
+    display: none
+   &-num
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 12px
+    line-height: 15px
+   &-link
+    font-size: 10px
+    line-height: 13px
+  &-wrap
+   height: 62px
+  &-logo
+   width: 110px

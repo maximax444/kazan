@@ -1,0 +1,127 @@
+.contacts
+ height: 650px
+ position: relative
+ &::before
+  content: ""
+  display: block 
+  height: 100%
+  width: 1000px
+  position: absolute
+  z-index: 1
+  left: 0
+  top: 0
+  background: linear-gradient(90deg, #FFFFFF 17.18%, rgba(255, 255, 255, 0) 100%)
+  pointer-events: none
+ #map
+  width: 100%
+  height: 100%
+  .ymaps-layers-pane 
+   filter: grayscale(100%)
+ &-cont
+  width: 553px
+  height: 462px
+  padding: 50px
+  background: #FFFFFF
+  border: 1px solid #D2D2D2
+  border-radius: 4px
+  position: absolute
+  z-index: 3
+  top: 100px
+  left: 400px
+ &-title
+  margin-top: 0
+  margin-bottom: 25px
+  font-size: 30px
+  line-height: 40px
+ &-block
+  display: flex
+  align-items: center
+  margin-bottom: 28px
+  &-soc
+   padding-left: 10px
+  &-img
+   display: flex
+   justify-content: center
+   align-items: center
+   border: 1px solid #F3F3F3
+   border-radius: 50%
+   margin-right: 15px
+   width: 57px
+   height: 57px
+  &-top
+   font-size: 12px
+  &-phone
+   font-weight: 300
+   font-size: 25px
+   line-height: 35px
+   color: #000000
+   display: block
+  &-link
+   text-decoration: none
+   font-size: 12px
+   line-height: 15px
+   text-decoration: underline
+   color: #DB6A01
+  &-adress
+   margin: 5px 0
+   font-weight: 500
+   font-size: 18px
+   line-height: 20px
+   a
+    text-decoration: none
+    color: #000000
+  &-small
+   font-size: 12px
+   line-height: 15px
+   color: rgba(0, 0, 0, 0.5)
+ &-btn
+  width: 203px
+  height: 62px
+  font-size: 14px
+@media(max-width: 1199px)
+ .contacts
+  &-cont
+   left: 100px
+@media(max-width: 767px)
+ .contacts
+  height: auto
+  padding-bottom: 44px
+  &::before
+   display: none
+  #map
+   height: 360px
+  &-cont
+   max-width: calc(100% - 30px)
+   position: relative
+   top: 0
+   left: 0
+   margin: 0 15px
+   margin-top: -50px
+@media(max-width: 575px)
+ .contacts
+  &-cont
+   height: auto
+   padding: 25px
+  &-title
+   margin-bottom: 20px
+   font-size: 20px
+   line-height: 30px
+  &-block
+   &-img
+    margin-right: 10px
+    width: 35px
+    height: 35px
+    img
+     max-width: 55%
+     max-height: 55%
+   &-phone
+    font-size: 20px
+    line-height: normal
+   &-adress
+    font-size: 14px
+   &-small
+    font-size: 10px
+   &-text
+    max-width: 80%
+   &-soc
+    display: none

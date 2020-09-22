@@ -1,0 +1,2611 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Казаны</title>
+ <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="css/style.min.css">
+ <link rel="stylesheet" href="slick/slick-theme.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+ <link rel="stylesheet" href="slick/slick.css">
+ <link rel="stylesheet" href="fonts/stylesheet.css">
+</head>
+
+<body>
+ <style>
+  *{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;font-family:Geometria}.container{width:1170px;margin:auto}@media (max-width: 1199px){.container{width:980px;margin:auto}}@media (max-width: 991px){.container{width:740px;margin:auto}}@media (max-width: 767px){.container{width:550px;margin:auto}}@media (max-width: 575px){.container{width:100%;padding-left:15px;padding-right:15px;margin:auto}}a{text-decoration:none;-webkit-transition:all 0.3s;transition:all 0.3s}button:focus{outline:none}.slick-slide:focus{outline:none}.btn-o{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:500;font-size:13px;line-height:16px;color:#DB6A01;border:1px solid #DB6A01;border-radius:50px;width:175px;height:46px}.btn-o:hover{cursor:pointer;background:-webkit-gradient(linear, left top, left bottom, from(#FFAA5D), to(#DB6A02));background:linear-gradient(180deg, #FFAA5D 0%, #DB6A02 100%);color:#ffffff;border:0}.btn{background:-webkit-gradient(linear, left top, left bottom, from(#FFAC5F), to(#DB6A01));background:linear-gradient(180deg, #FFAC5F 0%, #DB6A01 100%);-webkit-box-shadow:0px 3px 0px #A24E00;box-shadow:0px 3px 0px #A24E00;border-radius:70px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:520px;height:75px;font-weight:bold;font-size:16px;line-height:45px;text-align:center;color:#FFFFFF;position:relative}.btn::before{content:"";position:absolute;display:block;z-index:-1;width:80%;height:80%;bottom:-20%;left:10%;background:-webkit-gradient(linear, left top, left bottom, from(#FFAC5F), to(#DB6A01));background:linear-gradient(180deg, #FFAC5F 0%, #DB6A01 100%);opacity:0.8;-webkit-filter:blur(50px);filter:blur(50px);-webkit-transition:all 0.6s;transition:all 0.6s;border-radius:60px}.btn:hover{-webkit-box-shadow:none;box-shadow:none}.btn:hover::before{height:0}.wrapper{overflow:hidden}.top{height:40px;background:#FFAC5F;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.top-block{font-size:12px;text-decoration:none;line-height:143.8%;color:#000000;padding:0 20px}.top-block-active{font-weight:700;cursor:default}.top-block:first-child{border-right:1px solid rgba(0,0,0,0.1);padding-right:21px}.header{border-bottom:1px solid rgba(0,0,0,0.06)}.header-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;height:120px;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header-soc{width:104px;background:rgba(0,0,0,0.06);border-radius:50px;height:38px;padding:4px 3px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header-soc-block{width:30px;height:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:50%}.header-soc-block:hover{background-color:#fff}.header-block{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header-block-img{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:38px;width:38px;margin-right:9px;border:0.5px solid rgba(0,0,0,0.15);border-radius:50%}.header-block-text{font-weight:500;font-size:12px;line-height:143.8%;color:rgba(0,0,0,0.72)}.header-phone{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header-phone-text{margin-left:8px;font-weight:300;font-size:10px;line-height:13px;text-align:right;color:rgba(0,0,0,0.72)}.header-phone-num{display:block;font-weight:bold;font-size:20px;line-height:25px;color:rgba(0,0,0,0.72)}.header-phone-call{font-size:12px;line-height:15px;text-align:right;-webkit-text-decoration-line:underline;text-decoration-line:underline;color:#DB6A01}.header-phone-call:hover{opacity:0.8}.header-mob{display:none}.header-all{position:-webkit-sticky;position:sticky;top:0}.nav-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.nav-right{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav-menu{width:870px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.nav-menu a{text-decoration:none;line-height:75px;border-top:3px solid transparent;font-size:14px;color:rgba(0,0,0,0.81)}.nav-menu a:hover{color:#EF8421;font-weight:700;border-top:3px solid #EF8421}.nav-cart{width:46px;height:46px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border:1px solid #DB6A01;border-radius:50%;margin-left:20px}.nav-cart:hover{background:-webkit-gradient(linear, left top, left bottom, from(#FFAA5D), to(#DB6A02));background:linear-gradient(180deg, #FFAA5D 0%, #DB6A02 100%);border:0}.nav-close{display:none}@media (max-width: 1199px){.header-block-text{font-size:10px}.header-logo{width:150px}.header-logo img{max-width:100%}.nav-menu{width:780px}}@media (max-width: 991px){.header-logo{margin-right:10px}.header-wrap{height:100px}.header .header-soc{display:none}.header-phone-num{font-size:16px}.header-phone-text{margin-left:0}.header-block-img{margin-right:5px;width:25px;height:25px}.header-block-img img{max-width:60%;max-height:60%}.nav-menu{width:550px}.nav-menu a{font-size:11px;line-height:55px}}@media (max-width: 767px){.nav{display:none}.nav-close{font-size:24px;position:absolute;top:15px;right:15px;display:block}.nav-right{display:none}.nav-active{display:block;height:100vh;width:80vw;position:fixed;right:0;top:0;background-color:#fff;padding:42px 25px 25px;z-index:10}.nav-menu{display:block}.nav-menu a{display:block;font-size:16px;margin-bottom:15px;line-height:normal}.header-mob{display:block;z-index:6}.header-block{display:none}}@media (max-width: 575px){.header{border:0}.header-block-img{display:none}.header-phone span{display:none}.header-phone-num{margin-top:0;margin-bottom:0;font-size:12px;line-height:15px}.header-phone-link{font-size:10px;line-height:13px}.header-wrap{height:62px}.header-logo{width:110px}}.main{padding-top:30px;position:relative}.main-before{position:absolute;bottom:-180px;left:-40px;z-index:2}.main-before2{width:300px;bottom:-135px;border-radius:50%;background:#F9F9F9}.main-before2 img{max-width:100%}.main-after{position:absolute;background:#F9F9F9;top:-700px;right:-720px;width:1326px;border-radius:50%;height:1551px;z-index:-1}.main .container{position:relative}.main-img{pointer-events:none;position:absolute;top:0;right:-170px;width:630px;height:600px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:3}.main-img-dop{width:130px;height:130px;position:absolute;left:0;top:40px;background:#98C75E;-webkit-box-shadow:0px 4px 30px rgba(0,0,0,0.2);box-shadow:0px 4px 30px rgba(0,0,0,0.2);padding:12px;border-radius:50%}.main-img-dop-wrap{height:100%;border-radius:50%;border:1px solid rgba(255,255,255,0.39);-ms-flex-wrap:wrap;flex-wrap:wrap;font-size:15px;line-height:20px;text-align:center;letter-spacing:0.01em;color:#FFFFFF;padding-top:30px}.main-img-dop-wrap span{font-size:30px;font-weight:700}.main-top{width:177px;height:44px;margin-bottom:18px;border:1px solid #DB6A01;border-radius:5px;font-weight:500;font-size:16px;line-height:42px;text-align:center}.main-title{font-weight:400;font-size:40px;line-height:50px;letter-spacing:0.01em;margin:0}.main-subtitle{margin-bottom:21px;font-size:14px;line-height:40px;letter-spacing:0.01em}.main-warn{width:470px;height:80px;margin-bottom:25px;background:#FFFFFF;-webkit-box-shadow:0px 4px 20px rgba(0,0,0,0.1);box-shadow:0px 4px 20px rgba(0,0,0,0.1);border-radius:5px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.main-warn-icon{width:36px;height:36px;border-radius:50%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-right:22px;background:#EF8D34;-webkit-box-shadow:0px 4px 20px #DB6A01, inset 0px 4px 10px #FFB977;box-shadow:0px 4px 20px #DB6A01, inset 0px 4px 10px #FFB977}.main-warn-text{max-width:360px;font-size:12px;line-height:18px;color:#000000}.main-prize{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:35px;position:relative;z-index:3}.main-prize-text{font-weight:300;margin-right:15px;font-size:18px;line-height:25px}.main-prize-text b{display:block}.main-prize-block{width:100px;height:86px;background:#FBFBFB;border:1px solid rgba(0,0,0,0.06);border-radius:4px}.main-prize-block span{text-align:center;display:block;font-size:12px;line-height:35px;color:#DB6A01;font-weight:700}.main-prize-img{margin:0 auto;margin-top:18px;width:29px;height:29px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-prize-plus{margin:0 18px;font-weight:500;font-size:25px;line-height:29px}.main-btn{position:relative;z-index:3}.main-btn::after{content:"";width:108px;height:89px;background:url("../img/main-btn.png");position:absolute;right:-40px;bottom:-5px}.main-bottom{margin-top:70px}.main-bottom-wrap{background:#F9F9F9;height:80px;width:calc(100% + 300px);position:relative;left:-150px;padding-left:150px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-bottom-block{position:relative;z-index:3;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-right:35px;font-size:14px;line-height:20px;color:#000000}.main-bottom-block img{margin-right:8px}.main-bottom-block b{margin:0 4px}@media (max-width: 1630px){.main-before{width:240px}.main-before img{max-width:100%}}@media (max-width: 1420px){.main-before{width:140px;bottom:0}}@media (max-width: 1199px){.main-before{display:none}.main-img{width:400px}}@media (max-width: 991px){.main-img{position:static;width:100%;height:auto;margin-top:-100px}.main-img-dop{left:80px;top:140px}.main-img img{max-width:100%}}@media (max-width: 767px){.main-img{margin-top:-50px}.main-bottom-wrap{padding-top:1px;padding-bottom:1px;display:block;height:auto}.main-bottom-block{margin:10px 0}}@media (max-width: 575px){.main-img{margin-bottom:25px;margin-top:-55px}.main-img2{height:200px}.main-img-dop{left:auto;right:15px;top:40px;width:84px;height:84px;padding:5px}.main-img-dop-wrap{padding-top:12px}.main-top{width:131px;height:38px;font-size:12px;line-height:36px}.main-title{font-size:23px;line-height:30px;margin-bottom:13px}.main-subtitle{font-size:12px;margin-bottom:22px;line-height:normal}.main-warn{width:100%}.main-warn-text{max-width:70%}.main-prize{-ms-flex-wrap:wrap;flex-wrap:wrap}.main-prize-text{margin-bottom:10px}.main-btn{max-width:100%;font-size:12px;height:78px;line-height:normal;padding:0 30px;padding-right:50px;text-align:left;margin-bottom:20px}.main-bottom{margin-top:35px}}
+/*# sourceMappingURL=style.min.css.map */
+ </style>
+ <div class="wrapper">
+  <div class="wrapper2">
+   <div class="top">
+    <a href="index.html" class="top-block">Узбекские казаны</a>
+    <a href="afgan.html" class="top-block top-block-active">Афганские казаны</a>
+   </div>
+   <div class="header-all">
+    <div class="header">
+     <div class="container">
+      <div class="header-wrap">
+       <div class="header-logo"><img src="img/header-logo.png" alt=""></div>
+       <div class="header-block">
+        <div class="header-block-img"><img src="img/header-adress.png" alt=""></div>
+        <div class="header-block-text"><b>Самовывоз:</b> г. Минск, <br>
+         ул.Володько д.18, Офис 105а </div>
+       </div>
+       <div class="header-block">
+        <div class="header-block-img"><img src="img/header-del.png" alt=""></div>
+        <div class="header-block-text">Доставляем по Минску и всей Беларуси <br>
+         <b>с 09:00 - 23:00 (без выходных)</b></div>
+       </div>
+       <div class="header-phone">
+        <div class="header-block-img"><img src="img/header-phone.png" alt=""></div>
+        <div class="header-phone-text">
+         <span>Заказы принимаем круглосуточно</span>
+         <a href="tel:+375 29 360-45-77" class="header-phone-num">+375 25 502-00-77</a>
+         <a href="" class="header-phone-call">Заказать звонок</a>
+        </div>
+       </div>
+       <div class="header-soc">
+        <a href="https://t.me/Kazan_bel" class="header-soc-block" target="_blank"><img src="img/header-tg.png"
+          alt=""></a>
+        <a href="https://api.whatsapp.com/send?phone=375291275264" class="header-soc-block" target="_blank"><img
+          src="img/header-wa.png" alt=""></a>
+        <a href="viber://chat?number=+375291275264" class="header-soc-block" target="_blank"><img
+          src="img/header-viber.png" alt=""></a>
+       </div>
+       <a href="" class="header-mob"><img src="img/header-mob.png" alt=""></a>
+      </div>
+     </div>
+    </div>
+    <div class="nav">
+     <a href="" class="nav-close">&#10006;</a>
+     <div class="container">
+      <div class="nav-wrap">
+       <div class="nav-menu">
+        <a href="#features">Почему мы</a>
+        <a href="#about">О казанах</a>
+        <a href="#catalog">Каталог казанов</a>
+        <a href="#bake">Каталог печей</a>
+        <a href="#accessories">Посуда</a>
+        <a href="#original">Сравнение</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#gift">В подарок</a>
+       </div>
+       <div class="nav-right">
+        <a href="#popup:marquiz_5eb43090c9632900536fadcc" class="btn-o nav-right-btn">Подобрать казан</a>
+        <!--<a href="" class="nav-cart"><img src="img/nav-cart.png" alt=""></a>-->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="main">
+    <div class="main-before main-before2"><img src="img/main-before2.png" alt=""></div>
+    <div class="main-after"></div>
+    <div class="container">
+     <div class="main-img main-img2">
+      <div class="main-img-dop">
+       <div class="main-img-dop-wrap">
+        от <span>80</span> рублей
+       </div>
+      </div>
+      <img src="img/main-img2.png" alt="">
+     </div>
+     <div class="main-top">Оригинальные</div>
+     <h1 class="main-title"><b>Афганские казаны</b> с доставкой <br> по Минску за 4 часа</h1>
+     <div class="main-subtitle">Отправим в любую точку РБ</div>
+     <div class="main-warn">
+      <div class="main-warn-icon"><img src="img/main-warn.png" alt=""></div>
+      <div class="main-warn-text">Продаем только брендовые <b>Афганские (Алюминиевые) казаны Rashko Baba</b></div>
+     </div>
+     <div class="main-prize">
+      <div class="main-prize-text">Подберем лучший казан <b>специально для вас сделаем</b></div>
+      <div class="main-prize-block">
+       <div class="main-prize-img"><img src="img/main-prize1.png" alt=""></div><span>Скидку 15%</span>
+      </div>
+      <div class="main-prize-plus">+</div>
+      <div class="main-prize-block">
+       <div class="main-prize-img"><img src="img/main-prize2.png" alt=""></div><span>Подарок</span>
+      </div>
+     </div>
+     <a href="#popup:marquiz_5eb43090c9632900536fadcc" class="main-btn btn">Подобрать казан и получить скидку с
+      подарком</a>
+     <div class="main-bottom">
+      <div class="container">
+       <div class="main-bottom-wrap">
+        <div class="main-bottom-block"><img src="img/main-bottom1.png" alt="">Подходит для <b> всех типов плит!</b>
+        </div>
+        <div class="main-bottom-block"><img src="img/main-bottom2.png" alt=""><b>Рассрочка </b> по карте “Халва”!</div>
+        <div class="main-bottom-block"><img src="img/main-bottom3.png" alt="">Оплата <b> при получении!</b></div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="features" id="features">
+    <div class="container">
+     <h2 class="features-title">Мы - лидеры на рынке алюминиевых
+      Афганских казанов в Беларуси</h2>
+     <div class="features-subtitle">Нас выбирают клиенты, потому что мы работаем по принципу “всё включено”
+      что не может предложить 98% конкурентов</div>
+     <div class="features-wrap">
+      <div class="features-cloud1"><img src="img/features-cloud1.png" alt=""></div>
+      <div class="features-cloud2"><img src="img/features-cloud2.png" alt=""></div>
+      <div class="features-cloud3"><img src="img/features-cloud3.png" alt=""></div>
+      <div class="features-main">
+       <div class="features-block">
+        <div class="features-block-img"><img src="img/features1.png" alt=""></div>
+        <div class="features-block-title">Пожизненная
+         гарантия и сертификаты соответствия</div>
+        <div class="features-block-descr">Главный ориентир для нас - это качество предлагаемой продукции!</div>
+       </div>
+       <div class="features-block">
+        <div class="features-block-img"><img src="img/features2.png" alt=""></div>
+        <div class="features-block-title">Рассрочка под 0% на весь ассортимент</div>
+        <div class="features-block-descr">до 6 месяцев</div>
+        <div class="features-block-small">*Акции при покупке картой рассрочки халва не распространяются</div>
+       </div>
+       <div class="features-block">
+        <div class="features-block-img"><img src="img/features3.png" alt=""></div>
+        <div class="features-block-title">Любые способы
+         оплаты</div>
+        <div class="features-block-descr">Принимаем к оплате наличные, VISA, MasterCard, Белкард и всегда выдаём чек
+        </div>
+       </div>
+       <div class="features-block">
+        <div class="features-block-img"><img src="img/features4.png" alt=""></div>
+        <div class="features-block-title">Доставка по Минску
+         за 4 часа</div>
+        <div class="features-block-descr">Также доставляем и по всей
+         Беларуси за 1 день</div>
+       </div>
+       <div class="features-block">
+        <div class="features-block-img"><img src="img/features5.png" alt=""></div>
+        <div class="features-block-title">Продаем только казаны,
+         мы эксперты</div>
+        <div class="features-block-descr">Хорошо разбираемся в товаре, грамотно проконсультируем и поможем с правильным
+         выбором</div>
+       </div>
+       <div class="features-block">
+        <div class="features-block-img"><img src="img/features6.png" alt=""></div>
+        <div class="features-block-title">Официальный
+         продавец</div>
+        <div class="features-block-descr">Только настоящие Узбекские казаны, Grand Metal Invest закупаем
+         на прямую</div>
+        <a data-fancybox href="img/feat-sert.png" class="features-block-link">Сертификат</a>
+       </div>
+      </div>
+      <div class="features-man">
+       <img src="img/features-man.png" alt="">
+       <div class="features-man-text">Управляющий:<span>Денис</span></div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="cards">
+    <div class="container">
+     <div class="cards-top">
+      <div class="cards-top-block">
+       <div class="cards-top-img"><img src="img/card1.png" alt=""></div>
+       <div class="cards-top-title">6 месяцев</div>
+       <div class="cards-top-descr">Халва</div>
+      </div>
+      <div class="cards-top-block">
+       <div class="cards-top-img"><img src="img/card2.png" alt=""></div>
+       <div class="cards-top-title">6 месяцев</div>
+       <div class="cards-top-descr">Карта покупок</div>
+      </div>
+      <div class="cards-top-block">
+       <div class="cards-top-img"><img src="img/card3.png" alt=""></div>
+       <div class="cards-top-title">4 месяца</div>
+       <div class="cards-top-descr">Магнит</div>
+      </div>
+      <div class="cards-top-block">
+       <div class="cards-top-img"><img src="img/card4.png" alt=""></div>
+       <div class="cards-top-title">6 месяцев</div>
+       <div class="cards-top-descr">КартаFun</div>
+      </div>
+      <div class="cards-top-block">
+       <div class="cards-top-img"><img src="img/card5.png" alt=""></div>
+       <div class="cards-top-title">4 месяца</div>
+       <div class="cards-top-descr">Смарт карта</div>
+      </div>
+      <div class="cards-top-block">
+       <div class="cards-top-img"><img src="img/card6.png" alt=""></div>
+       <div class="cards-top-title">10 месяцев</div>
+       <div class="cards-top-descr">КартаВТБ</div>
+      </div>
+     </div>
+     <div class="cards-main">
+      <div class="cards-main-block"><img src="img/cards-main1.png" alt="">Рассрочка до 20 месяцев</div>
+      <div class="cards-main-block"><img src="img/cards-main2.png" alt="">Постоянные скидки и акции</div>
+      <div class="cards-main-block"><img src="img/cards-main3.png" alt="">Доставка по всей Беларуси</div>
+     </div>
+     <div class="cards-bottom">
+      <a href="" class="cards-bottom-btn btn">Купить в рассрочку</a>
+
+     </div>
+    </div>
+   </div>
+   <div class="about" id="about">
+    <div class="about1"><img src="img/aboutt1.png" alt=""></div>
+    <div class="about2"><img src="img/aboutt2.png" alt=""></div>
+    <div class="about3"><img src="img/aboutt3.png" alt=""></div>
+    <div class="container">
+     <h2 class="about-title">Оригинальные Афганские казаны
+      <span>Grand Metall Invest</span> <img src="img/about-title-info.png" alt="">
+      <div class="about-title-drop">ООО «Гранд-Металл» – ведущая компания на рынке российского цветного металлопроката.
+       ООО «Гранд-Металл» зарекомендовал себя надежным поставщиком на рынке цветной металлургии.</div>
+     </h2>
+     <div class="about-subtitle">Изготовлены из настоящего чугуна. Не выделяют вредных испарений и безопасны для
+      здоровья Вас, и Вашей семьи!</div>
+     <div class="about-dop">
+      <a data-fancybox href="img/sert.png" class="about-dop-img"><img src="img/about-dop.png" alt=""></a>
+      <div class="about-dop-text">Мы официальный продавец <b>Grand Metall Invest</b> в Беларуси</div>
+     </div>
+     <div class="about-wrap">
+      <div class="about-col">
+       <div class="about-block">
+        <div class="about-block-img"><img src="img/about1.png" alt=""></div>
+        <div class="about-block-descr">Алюминиевая крышка в комплекте</div>
+       </div>
+       <div class="about-block">
+        <div class="about-block-img"><img src="img/about2.png" alt=""></div>
+        <div class="about-block-descr">Плоское или круглое дно на выбор. Казан имеет внутри шлифованные стенки</div>
+       </div>
+       <div class="about-block">
+        <div class="about-block-img"><img src="img/about3.png" alt=""></div>
+        <div class="about-block-descr">Можно использовать как на электрической, так и на индукционной плите!</div>
+       </div>
+      </div>
+      <div class="about-main">
+       <div class="about-main-wrap">
+        <div class="about-main-img"><img src="img/about-main-img.png" alt=""></div>
+        <div class="about-main-old"><img src="img/about-old.png" alt=""></div>
+        <a data-fancybox href="https://www.youtube.com/watch?v=FJxx0nxQVrI&feature=emb_logo"
+         class="about-main-play"><img src="img/about-main-play.png" alt=""></a>
+       </div>
+       <a href="#catalog" class="btn about-main-btn">Перейти в каталог</a>
+      </div>
+      <div class="about-col">
+       <div class="about-block">
+        <div class="about-block-img"><img src="img/about4.png" alt=""></div>
+        <div class="about-block-descr">Только в настоящем казане из чугуна еда не пригорает, не жарится, а томится</div>
+       </div>
+       <div class="about-block">
+        <div class="about-block-img"><img src="img/about5.png" alt=""></div>
+        <div class="about-block-descr">Азиатская форма чаши казана равномерно распределяет
+         жар по стенкам и насыщает блюдо вкусом и ароматом</div>
+       </div>
+       <div class="about-block">
+        <div class="about-block-img"><img src="img/about6.png" alt=""></div>
+        <div class="about-block-descr">Цены от 70BYN</div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="catalog" id="catalog">
+    <div class="container">
+     <h2 class="catalog-title">Каталог Узбекских казанов Grand Metall Invest</h2>
+     <div class="catalog-dop"><img src="img/catalog-dop.png" alt=""> Сезонная <b>скидка 20%</b> действует до 1 мая</div>
+     <div class="catalog-tabs-wrap">
+      <div class="catalog-tabs">
+       <div class="catalog-tab catalog-tab-active">4.5 л.</div>
+       <div class="catalog-tab">6 л.</div>
+       <div class="catalog-tab">7 л.</div>
+       <div class="catalog-tab">8 л.</div>
+       <div class="catalog-tab">10 л.</div>
+       <div class="catalog-tab">12 л.</div>
+       <div class="catalog-tab">16 л.</div>
+       <div class="catalog-tab">22 л.</div>
+       <div class="catalog-tab">30 л.</div>
+       <div class="catalog-tab">40 л.</div>
+       <div class="catalog-tab">50 л.</div>
+       <div class="catalog-tab">60 л.</div>
+       <div class="catalog-tab">80 л.</div>
+       <div class="catalog-tab">100 л.</div>
+       <div class="catalog-tab">150 л.</div>
+       <div class="catalog-tab">225 л.</div>
+      </div>
+     </div>
+     <div class="catalog-cont">
+      <div class="catalog-cont-block catalog-cont-block-active">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+      <div class="catalog-cont-block">
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+       <div class="catalog-block">
+        <div class="catalog-block-img"><img src="img/catalog-img.png" alt=""></div>
+        <div class="catalog-block-title">Узбекский казан
+         Grand Metall Invest</div>
+        <div class="catalog-block-info">
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el1.png" alt=""></div><b>3-4</b> персоны
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el2.png" alt=""></div><b>Плоское и Круглое</b> дно
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el3.png" alt=""></div><b>Диаметр казана:</b> 32 см.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el4.png" alt=""></div><b>Толщина стенки:</b> 9 мм.
+         </div>
+         <div class="catalog-block-el">
+          <div class="catalog-block-el-img"><img src="img/catalog-el5.png" alt=""></div><b>Вес:</b> 6 кг.
+         </div>
+        </div>
+        <div class="catalog-block-price">
+         <div class="catalog-block-price1"><span>90</span> руб.</div>
+         <div class="catalog-block-price2"><span>106</span> руб.</div>
+        </div>
+        <div class="catalog-block-bottom">
+         <a href="" class="btn catalog-block-btn">Подробнее</a>
+         <a href="" class="catalog-block-btn-o btn-o">Купить</a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a href="" class="catalog-more btn-o">Показать ещё</a>
+    </div>
+   </div>
+   <div class="catalog-compl">
+    <div class="container">
+     <div class="catalog-compl-wrap">
+      <div class="catalog-compl-text">
+       <div class="catalog-compl-title">В нашем магазине все казаны идут в полном комплекте</div>
+       <div class="catalog-compl-descr">Всегда обращайте внимание на комплект, многие продавцы делят заводской комплект
+        на составляющие, чтобы сделать видимость сниженной цены, а потом допродают вам комплект отдельно</div>
+      </div>
+      <div class="catalog-compl-main">
+       <div class="catalog-compl-block">
+        <div class="catalog-compl-img"><img src="img/catalog-compl1.png" alt=""></div>
+        <div class="catalog-compl-name">Алюминиевая
+         крышка</div>
+       </div>
+       <div class="catalog-compl-block">
+        <div class="catalog-compl-img"><img src="img/catalog-compl2.png" alt=""></div>
+        <div class="catalog-compl-name">Книга рецептов <img src="img/catalog-compl-info.png" alt="">
+         <div class="catalog-compl-drop">Книга рецептов - представляет собой сборник рецептов с пошаговыми фотографиями
+          и описанием приготовления различных блюд.</div>
+        </div>
+       </div>
+       <div class="catalog-compl-block">
+        <div class="catalog-compl-img"><img src="img/catalog-compl3.png" alt=""></div>
+        <div class="catalog-compl-name">Гарантийный
+         талон</div>
+       </div>
+       <div class="catalog-compl-block">
+        <div class="catalog-compl-img"><img src="img/catalog-compl4.png" alt=""></div>
+        <div class="catalog-compl-name">Товарный чек</div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="afgan">
+    <div class="container">
+     <div class="afgan-wrap">
+      <div class="afgan-cont">
+       <h2 class="afgan-title">Мы также продаём оригинальные Узбекские казаны</h2>
+       <a href="/" class="btn afgan-btn">Подробнее об Узбекских казанах</a>
+      </div>
+      <div class="afgan-img"><img src="img/afgan-img2.png" alt=""></div>
+     </div>
+    </div>
+   </div>
+   <div class="five five2">
+    <div class="container">
+     <h2 class="five-title">Ответьте на 5 вопросов и получите:</h2>
+     <div class="five-block">
+      <div class="five-block-img"><img src="img/five1.png" alt=""></div>
+      <div class="five-block-text"><b>2-3 варианта казанов,</b> которые <br>
+       подойдут именно вам</div>
+     </div>
+     <div class="five-block">
+      <div class="five-block-img five-block-img2"><img src="img/five2.png" alt=""></div>
+      <div class="five-block-text"><b>Сравнение</b>, каждого казана, <br>
+       какой лучше, а какой хуже</div>
+     </div>
+     <div class="five-block">
+      <div class="five-block-img five-block-img2"><img src="img/five3.png" alt=""></div>
+      <div class="five-block-text"><b>Скидку 15%</b> при заказе <br>
+       + полезный подарок</div>
+     </div>
+     <a href="#popup:marquiz_5eb43090c9632900536fadcc" class="five-btn btn">Ответить на вопросы и получить</a>
+    </div>
+   </div>
+   <div class="bake" id="bake">
+    <div class="container">
+     <h2 class="bake-title">Печи есть <span>4-х видов</span></h2>
+     <div class="bake-wrap">
+      <div class="bake-block">
+       <div class="bake-arrow bake-prev bake-prev1">
+        <svg width="24" height="24" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
+         style="display: block;">
+         <path d="M39 68L60 47L39 26" stroke="black" vector-effect="non-scaling-stroke"
+          style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+        </svg>
+       </div>
+       <div class="bake-arrow bake-next bake-next1">
+        <svg width="24" height="24" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
+         style="display: block;">
+         <path d="M39 68L60 47L39 26" stroke="black" vector-effect="non-scaling-stroke"
+          style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+        </svg>
+       </div>
+       <div class="bake-img bake-img1">
+        <img src="img/bake1-2.png" alt="">
+        <img src="img/bake1-3.png" alt="">
+        <img src="img/bake1-1.png" alt="">
+       </div>
+       <div class="bake-name">Стандарт</div>
+       <div class="bake-info">
+        <div class="bake-el">
+         <div class="bake-el-start">Количество ножек</div> <span>—</span>
+         <div class="bake-el-end">4</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Дверца</div> <span>—</span>
+         <div class="bake-el-end">нет</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Дымоход</div> <span>—</span>
+         <div class="bake-el-end">нет</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Толщина металла</div> <span>—</span>
+         <div class="bake-el-end">3 мм</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Размер печи для казана</div> <span>—</span>
+         <div class="bake-el-end">6-30 л</div>
+        </div>
+       </div>
+       <div class="bake-descr"></div>
+       <div class="bake-bottom">
+        <div class="bake-price">от 100 руб.</div>
+        <a href="" class="btn bake-btn">Заказать</a>
+       </div>
+      </div>
+      <div class="bake-block">
+       <div class="bake-arrow bake-prev bake-prev2">
+        <svg width="24" height="24" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
+         style="display: block;">
+         <path d="M39 68L60 47L39 26" stroke="black" vector-effect="non-scaling-stroke"
+          style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+        </svg>
+       </div>
+       <div class="bake-arrow bake-next bake-next2">
+        <svg width="24" height="24" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
+         style="display: block;">
+         <path d="M39 68L60 47L39 26" stroke="black" vector-effect="non-scaling-stroke"
+          style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+        </svg>
+       </div>
+       <div class="bake-img bake-img2">
+        <img src="img/bake2-1.png" alt="">
+        <img src="img/bake2-2.png" alt="">
+        <img src="img/bake2-3.png" alt="">
+        <img src="img/bake1-1.png" alt="">
+       </div>
+       <div class="bake-name">Печь с дверцей</div>
+       <div class="bake-info">
+        <div class="bake-el">
+         <div class="bake-el-start">Количество ножек</div> <span>—</span>
+         <div class="bake-el-end">4</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Дверца</div> <span>—</span>
+         <div class="bake-el-end">нет</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Дымоход</div> <span>—</span>
+         <div class="bake-el-end">нет</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Толщина металла</div> <span>—</span>
+         <div class="bake-el-end">3 мм</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Размер печи для казана</div> <span>—</span>
+         <div class="bake-el-end">6-30 л</div>
+        </div>
+       </div>
+       <div class="bake-descr">
+        <b>Дверца для печи</b>
+        Дверца печи из толстой стали не позволит жару покинуть печную топку, что обезопасит вас от ожогов и позволит
+        комфортно стоять у казана и готовить вкусные блюда.
+       </div>
+       <div class="bake-bottom">
+        <div class="bake-price">от 140 руб.</div>
+        <a href="" class="btn bake-btn">Заказать</a>
+       </div>
+      </div>
+      <div class="bake-block">
+       <div class="bake-arrow bake-prev bake-prev3">
+        <svg width="24" height="24" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
+         style="display: block;">
+         <path d="M39 68L60 47L39 26" stroke="black" vector-effect="non-scaling-stroke"
+          style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+        </svg>
+       </div>
+       <div class="bake-arrow bake-next bake-next3">
+        <svg width="24" height="24" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
+         style="display: block;">
+         <path d="M39 68L60 47L39 26" stroke="black" vector-effect="non-scaling-stroke"
+          style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+        </svg>
+       </div>
+       <div class="bake-img bake-img3">
+        <img src="img/bake3-1.png" alt="">
+        <img src="img/bake3-2.png" alt="">
+        <img src="img/bake3-3.png" alt="">
+        <img src="img/bake3-4.png" alt="">
+        <img src="img/bake2-3.png" alt="">
+       </div>
+       <div class="bake-name">Печь с трубой</div>
+       <div class="bake-info">
+        <div class="bake-el">
+         <div class="bake-el-start">Количество ножек</div> <span>—</span>
+         <div class="bake-el-end">4</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Дверца</div> <span>—</span>
+         <div class="bake-el-end">нет</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Дымоход</div> <span>—</span>
+         <div class="bake-el-end">нет</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Толщина металла</div> <span>—</span>
+         <div class="bake-el-end">3 мм</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Размер печи для казана</div> <span>—</span>
+         <div class="bake-el-end">6-30 л</div>
+        </div>
+       </div>
+       <div class="bake-descr">
+        <b>Труба с дымоходом</b>
+        Съемная труба обеспечит хорошую тягу с возможностью регулировки и равномерное сгорание дров, а значит и
+        экономичный расход дров станет меньше. Изоляция дыма - не попадёт в глаза.
+       </div>
+       <div class="bake-bottom">
+        <div class="bake-price">от 200 руб.</div>
+        <a href="" class="btn bake-btn">Заказать</a>
+       </div>
+      </div>
+      <div class="bake-block">
+
+       <div class="bake-img">
+        <img src="img/bake4.png" alt="">
+       </div>
+       <div class="bake-name">Печь с зольником</div>
+       <div class="bake-info">
+        <div class="bake-el">
+         <div class="bake-el-start">Количество ножек</div> <span>—</span>
+         <div class="bake-el-end">4</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Дверца</div> <span>—</span>
+         <div class="bake-el-end">нет</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Дымоход</div> <span>—</span>
+         <div class="bake-el-end">нет</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Зольник</div> <span>—</span>
+         <div class="bake-el-end">да</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Толщина металла</div> <span>—</span>
+         <div class="bake-el-end">3 мм</div>
+        </div>
+        <div class="bake-el">
+         <div class="bake-el-start">Размер печи для казана</div> <span>—</span>
+         <div class="bake-el-end">6-30 л</div>
+        </div>
+       </div>
+       <div class="bake-descr">
+        <b>Зольник</b>
+        Это камера под решеткой топки, которая обустроена металлическим поддоном. При сгорании любого материала в печи,
+        остаются зола и пепел.
+       </div>
+       <div class="bake-bottom">
+        <div class="bake-price">от 300 руб.</div>
+        <a href="" class="btn bake-btn">Заказать</a>
+       </div>
+      </div>
+     </div>
+     <div class="bake-features">
+      <div class="bake-features-title">Преимущества печи</div>
+      <div class="bake-features-wrap">
+       <div class="bake-features-block">
+        <div class="bake-features-img"><img src="img/bake-feat1.png" alt=""></div>Минимальный расход топлива
+       </div>
+       <div class="bake-features-block">
+        <div class="bake-features-img"><img src="img/bake-feat2.png" alt=""></div>Ветки и щепки прогорают равномерно
+       </div>
+       <div class="bake-features-block">
+        <div class="bake-features-img"><img src="img/bake-feat3.png" alt=""></div>Источник огня в закрытом доступе
+       </div>
+       <div class="bake-features-block">
+        <div class="bake-features-img"><img src="img/bake-feat4.png" alt=""></div>Нет дыма как от костра
+       </div>
+      </div>
+     </div>
+     <div class="bake-man">
+      <div class="bake-man-slider">
+       <div class="bake-arrow bake-prev bake-prev4">
+        <svg width="24" height="24" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
+         style="display: block;">
+         <path d="M39 68L60 47L39 26" stroke="black" vector-effect="non-scaling-stroke"
+          style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+        </svg>
+       </div>
+       <div class="bake-arrow bake-next bake-next4">
+        <svg width="24" height="24" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
+         style="display: block;">
+         <path d="M39 68L60 47L39 26" stroke="black" vector-effect="non-scaling-stroke"
+          style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+        </svg>
+       </div>
+       <img src="img/bake-man1.jpg" alt="">
+       <img src="img/bake-man2.jpg" alt="">
+      </div>
+      <div class="bake-man-cont">
+       <div class="bake-man-title">Мангал 3 в 1</div>
+       <div class="bake-man-text">
+        <b>Многофункциональный мангал 4мм</b> <br>
+        Размеры мангала: 90x35x80 см. Идет со съемными ножками. <br><br>
+        Мангал идеально подойдет для казана от <b>8 до 12л</b>
+       </div>
+       <div class="bake-man-main">
+        <div class="bake-man-el">
+         Для казана:
+         <span>8л-12л</span>
+        </div>
+        <div class="bake-man-el">
+         Цена:
+         <span>от 280 руб.</span>
+        </div>
+        <a href="" class="bake-man-btn btn">Подробнее</a>
+        <a href="" class="bake-man-btn-o btn-o">Заказать</a>
+       </div>
+       <div class="bake-man-features">
+        <div class="bake-man-features-title">Преимущества:</div>
+        <div class="bake-man-features-wrap">
+         <div class="bake-man-features-block">
+          <div class="bake-man-features-img"><img src="img/bake-man-feat1.png" alt=""></div>Простота сборки
+         </div>
+         <div class="bake-man-features-block">
+          <div class="bake-man-features-img"><img src="img/bake-man-feat2.png" alt=""></div>Надёжность конструкции
+         </div>
+         <div class="bake-man-features-block">
+          <div class="bake-man-features-img"><img src="img/bake-man-feat3.png" alt=""></div>Удобство в использовании
+         </div>
+         <div class="bake-man-features-block">
+          <div class="bake-man-features-img"><img src="img/bake-man-feat4.png" alt=""></div>Можно жарить шашлык и гриль,
+          во <br> время готовки на казане или отдельно
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="ready">
+    <div class="ready-before"><img src="img/ready-before.png" alt=""></div>
+    <div class="container">
+     <h2 class="ready-title">Готовые комплекты</h2>
+     <div class="ready-subtitle"><img src="img/ready-dop.png" alt=""> Получите шумовку в подарок при заказе комплектом!
+     </div>
+     <div class="ready-wrap">
+      <div class="ready-block">
+       <div class="ready-img"><img src="img/ready-img2.png" alt=""></div>
+       <div class="ready-name">Казан 8 литров + печь</div>
+       <div class="ready-price">
+        <b>Цена казана:</b> <span>200</span> 155 руб. <br>
+        <b>Цена печи:</b> 100 руб.
+       </div>
+       <div class="ready-el-title">КАЗАН</div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el1.png" alt=""></div>
+        <div class="ready-el-text"><b>Диаметр:</b> 24 см.</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el3.png" alt=""></div>
+        <div class="ready-el-text"><b>Материал:</b> алюминий</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el4.png" alt=""></div>
+        <div class="ready-el-text"><b>Высота:</b> 370 мм.</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el5.png" alt=""></div>
+        <div class="ready-el-text"><b>Крышка:</b> алюминиевая</div>
+       </div>
+       <br><br>
+       <div class="ready-el-title">ПЕЧЬ</div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el1.png" alt=""></div>
+        <div class="ready-el-text"><b>Диаметр:</b> 320 мм.</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el4.png" alt=""></div>
+        <div class="ready-el-text"><b>Толщина стали:</b> 3 мм.</div>
+       </div>
+       <br>
+       <div class="ready-price2">
+        <div class="ready-price2-block">
+         <div class="ready-price2-top">Цена комплекта</div>
+         <b>190</b> руб.
+        </div>
+        <div class="ready-price2-block ready-price2-block2">
+         <div class="ready-price2-top">Цена, если покупать отдельно</div>
+         <span><b>215</b> руб.</span>
+        </div>
+       </div>
+       <div class="ready-bottom">
+        <a href="" class="ready-bottom-btn btn">Подробнее</a>
+        <a href="" class="ready-bottom-btn-o btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="ready-block">
+       <div class="ready-img"><img src="img/ready-img2.png" alt=""></div>
+       <div class="ready-name">Казан 10 литров + печь</div>
+       <div class="ready-price">
+        <b>Цена казана:</b> <span>210</span> 160 руб. <br>
+        <b>Цена печи:</b> 105 руб.
+       </div>
+       <div class="ready-el-title">КАЗАН</div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el1.png" alt=""></div>
+        <div class="ready-el-text"><b>Диаметр:</b> 26 см.</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el3.png" alt=""></div>
+        <div class="ready-el-text"><b>Материал:</b> алюминий</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el4.png" alt=""></div>
+        <div class="ready-el-text"><b>Высота:</b> 400 мм.</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el5.png" alt=""></div>
+        <div class="ready-el-text"><b>Крышка:</b> алюминиевая</div>
+       </div>
+       <br><br>
+       <div class="ready-el-title">ПЕЧЬ</div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el1.png" alt=""></div>
+        <div class="ready-el-text"><b>Диаметр:</b> 340 мм.</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el4.png" alt=""></div>
+        <div class="ready-el-text"><b>Толщина стали:</b> 3 мм.</div>
+       </div>
+       <br>
+       <div class="ready-price2">
+        <div class="ready-price2-block">
+         <div class="ready-price2-top">Цена комплекта</div>
+         <b>220</b> руб.
+        </div>
+        <div class="ready-price2-block ready-price2-block2">
+         <div class="ready-price2-top">Цена, если покупать отдельно</div>
+         <span><b>259</b> руб.</span>
+        </div>
+       </div>
+       <div class="ready-bottom">
+        <a href="" class="ready-bottom-btn btn">Подробнее</a>
+        <a href="" class="ready-bottom-btn-o btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="ready-block">
+       <div class="ready-img"><img src="img/ready-img2.png" alt=""></div>
+       <div class="ready-name">Казан 15 литров + печь</div>
+       <div class="ready-price">
+        <b>Цена казана:</b> <span>230</span> 170 руб. <br>
+        <b>Цена печи:</b> 120 руб.
+       </div>
+       <div class="ready-el-title">КАЗАН</div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el1.png" alt=""></div>
+        <div class="ready-el-text"><b>Диаметр:</b> 28 см.</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el3.png" alt=""></div>
+        <div class="ready-el-text"><b>Материал:</b> алюминий</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el4.png" alt=""></div>
+        <div class="ready-el-text"><b>Высота:</b> 430 мм.</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el5.png" alt=""></div>
+        <div class="ready-el-text"><b>Крышка:</b> алюминиевая</div>
+       </div>
+       <br><br>
+       <div class="ready-el-title">ПЕЧЬ</div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el1.png" alt=""></div>
+        <div class="ready-el-text"><b>Диаметр:</b> 360 мм.</div>
+       </div>
+       <div class="ready-el">
+        <div class="ready-el-img"><img src="img/accessories-el4.png" alt=""></div>
+        <div class="ready-el-text"><b>Толщина стали:</b> 3 мм.</div>
+       </div>
+       <br>
+       <div class="ready-price2">
+        <div class="ready-price2-block">
+         <div class="ready-price2-top">Цена комплекта</div>
+         <b>250</b> руб.
+        </div>
+        <div class="ready-price2-block ready-price2-block2">
+         <div class="ready-price2-top">Цена, если покупать отдельно</div>
+         <span><b>295</b> руб.</span>
+        </div>
+       </div>
+       <div class="ready-bottom">
+        <a href="" class="ready-bottom-btn btn">Подробнее</a>
+        <a href="" class="ready-bottom-btn-o btn-o">Купить</a>
+       </div>
+      </div>
+     </div>
+     <a href="" class="ready-more btn">Показать ещё</a>
+     <a href="" class="btn-o ready-btn">Помочь с выбором комплекта</a>
+    </div>
+   </div>
+
+   <div class="accessories" id="accessories">
+    <div class="container">
+     <h2 class="accessories-title">Аксессуары для удобной готовки
+      и подачи блюд с душой</h2>
+     <div class="accessories-slider">
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories1.png" alt=""></div>
+       <div class="accessories-name">Шумовки, Половники</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Длина: 40, 48, 65</b> см.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из нержавеющей стали. <br> Деревянная ручка.</div>
+        </div>
+       </div>
+
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>от 20</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories2.jpg" alt=""></div>
+       <div class="accessories-name">Ляганы для подачи блюд</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Диаметр: 42, 46</b> см.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el2.png" alt=""></div>
+         <div class="accessories-el-text">Ручная работа.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из глины, покрытые глазурью.</div>
+        </div>
+       </div>
+
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>от 50</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories3.jpg" alt=""></div>
+       <div class="accessories-name">Коса для первых блюд</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Диаметр</b> 18 см, объём 750 мл.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el2.png" alt=""></div>
+         <div class="accessories-el-text">Ручная работа.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из глины, покрытые глазурью.</div>
+        </div>
+       </div>
+
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>19</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories4.jpg" alt=""></div>
+       <div class="accessories-name">Тарелка для вторых блюд</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Диаметр</b>: 24 см.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el2.png" alt=""></div>
+         <div class="accessories-el-text">Ручная работа.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из глины, покрытые глазурью.</div>
+        </div>
+       </div>
+
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>23</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories5.jpg" alt=""></div>
+       <div class="accessories-name">Пиалы</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Диаметр: 8, 11</b> см.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el2.png" alt=""></div>
+         <div class="accessories-el-text">Ручная работа.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из глины, покрытые глазурью.</div>
+        </div>
+       </div>
+
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>от 13</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories6.jpg" alt=""></div>
+       <div class="accessories-name">Чайник</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Объём 0,6</b> л.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el2.png" alt=""></div>
+         <div class="accessories-el-text">Ручная работа.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из глины, покрытые глазурью.</div>
+        </div>
+       </div>
+
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>от 40</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories7.jpg" alt=""></div>
+       <div class="accessories-name">Набор шампуров (6шт)</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Размеры: 50</b> см.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из нержавеющей стали. <br> Деревянная ручка.</div>
+        </div>
+       </div>
+
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>50</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories8.jpg" alt=""></div>
+       <div class="accessories-name">Решетка для гриля</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Размеры: </b> 35x40 см.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из жаростойкой углеродистой стали.</div>
+        </div>
+       </div>
+
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>70</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories9.png" alt=""></div>
+       <div class="accessories-name">Тренога для казана от 6 до 22л</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Размеры: </b> 32x36 см.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовленa из стали.</div>
+        </div>
+       </div>
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>от 40</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories10.png" alt=""></div>
+       <div class="accessories-name">Ножи Пчаки</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Размеры:</b> от 26 до 36 см.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из Стали: Подпишника, Рельсы, Дамаска.</div>
+        </div>
+       </div>
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>от 80</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+      <div class="accessories-block">
+       <div class="accessories-img"><img src="img/accessories11.png" alt=""></div>
+       <div class="accessories-name">Силиконовая прокладка для казана от 5 до 15л</div>
+       <div class="accessories-el-wrap">
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el1.png" alt=""></div>
+         <div class="accessories-el-text"><b>Размеры:</b> 5 мм.</div>
+        </div>
+        <div class="accessories-el">
+         <div class="accessories-el-img"><img src="img/accessories-el3.png" alt=""></div>
+         <div class="accessories-el-text">Изготовлены из силикона</div>
+        </div>
+       </div>
+       <div class="accessories-price-title">Цена:</div>
+       <div class="accessories-price"><span>от 20</span> руб.</div>
+       <div class="accessories-bottom">
+        <a href="" class="btn">Подробнее</a>
+        <a href="" class="btn-o">Купить</a>
+       </div>
+      </div>
+     </div>
+     <div class="accessories-nav">
+      <div class="accessories-arrow accessories-prev">
+       <svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M0.646446 4.90336C0.451185 4.7081 0.451185 4.39151 0.646446 4.19625L3.82843 1.01427C4.02369 0.819009 4.34027 0.819009 4.53553 1.01427C4.7308 1.20953 4.7308 1.52612 4.53553 1.72138L1.70711 4.5498L4.53553 7.37823C4.7308 7.57349 4.7308 7.89008 4.53553 8.08534C4.34027 8.2806 4.02369 8.2806 3.82843 8.08534L0.646446 4.90336ZM23 5.0498H1V4.0498H23V5.0498Z"
+         fill="#EF8D34" />
+       </svg>
+      </div>
+      <div class="accessories-arrow accessories-next">
+       <svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M22.3536 4.90336C22.5488 4.7081 22.5488 4.39151 22.3536 4.19625L19.1716 1.01427C18.9763 0.819009 18.6597 0.819009 18.4645 1.01427C18.2692 1.20953 18.2692 1.52612 18.4645 1.72138L21.2929 4.5498L18.4645 7.37823C18.2692 7.57349 18.2692 7.89008 18.4645 8.08534C18.6597 8.2806 18.9763 8.2806 19.1716 8.08534L22.3536 4.90336ZM0 5.0498H22V4.0498H0V5.0498Z"
+         fill="#EF8D34" />
+       </svg>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="reviews" id="reviews">
+    <div class="reviews-after"><img src="img/rev-after.png" alt=""></div>
+    <div class="reviews-before"><img src="img/rev-before.png" alt=""></div>
+    <div class="container">
+     <h2 class="reviews-title">Отзывы покупателей</h2>
+     <div class="reviews-slider">
+      <div class="reviews-arrow reviews-prev">
+       <svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M0.646446 4.90336C0.451185 4.7081 0.451185 4.39151 0.646446 4.19625L3.82843 1.01427C4.02369 0.819009 4.34027 0.819009 4.53553 1.01427C4.7308 1.20953 4.7308 1.52612 4.53553 1.72138L1.70711 4.5498L4.53553 7.37823C4.7308 7.57349 4.7308 7.89008 4.53553 8.08534C4.34027 8.2806 4.02369 8.2806 3.82843 8.08534L0.646446 4.90336ZM23 5.0498H1V4.0498H23V5.0498Z"
+         fill="#EF8D34" />
+       </svg>
+      </div>
+      <div class="reviews-arrow reviews-next">
+       <svg width="23" height="9" viewBox="0 0 23 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M22.3536 4.90336C22.5488 4.7081 22.5488 4.39151 22.3536 4.19625L19.1716 1.01427C18.9763 0.819009 18.6597 0.819009 18.4645 1.01427C18.2692 1.20953 18.2692 1.52612 18.4645 1.72138L21.2929 4.5498L18.4645 7.37823C18.2692 7.57349 18.2692 7.89008 18.4645 8.08534C18.6597 8.2806 18.9763 8.2806 19.1716 8.08534L22.3536 4.90336ZM0 5.0498H22V4.0498H0V5.0498Z"
+         fill="#EF8D34" />
+       </svg>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva2-1.png" alt=""></div>
+          <div class="reviews-autor-name">Иван <br> Cтроев</div>
+         </div>
+         <div class="reviews-subtitle">Оправдал ожидания, блюда получаются вкусные, ароматные.)</div>
+         <div class="reviews-text">
+          Можно использовать каждый день, а можно изредка баловать себя и близких необычными рецептами. Для
+          приготовления еды на даче самое то. Выбирайте большой объем. Если тех, кого вы хотите накормить немного -
+          можно положить в него меньше, а если будет человек 10, то 15 литров хватит.
+         </div>
+        </div>
+        <div class="reviews-img"><img src="img/rev2-1.png" alt=""></div>
+       </div>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva2-2.png" alt=""></div>
+          <div class="reviews-autor-name">Наталья <br>
+           Сиренко</div>
+         </div>
+         <div class="reviews-subtitle">У меня казан уже почти две недели, пользуемся часто, пока очень даже все
+          нравится.</div>
+         <div class="reviews-text">Специально сразу после покупки не писала отзыв, думаю, посмотрю, что и как, оценю
+          работу, а потом уже и писать можно, чтоб реальные впечатления отразить. Первое что скажу, выбор был
+          правильным, и поставщика, сервис на высшем уровне, никаких тебе задержек, отговорок, лишних переплат. Еще раз,
+          большое вам спасибо, действительно помогли. И самое главное забыла сказать – еда в Афганском казане получается
+          такая, что прям пальчики оближешь!</div>
+        </div>
+        <div class="reviews-img"><img src="img/rev2-2.png" alt=""></div>
+       </div>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva2-3.png" alt=""></div>
+          <div class="reviews-autor-name">Евгений <br> Орехов</div>
+         </div>
+         <div class="reviews-subtitle">Доставили быстро. Качеством довольны.</div>
+         <div class="reviews-text">Хороший выбор для приготовления блюд на большую компанию, никаких лишних движений,
+          загрузил и получил отличный результат.</div>
+        </div>
+        <div class="reviews-img"><img src="img/rev2-3.png" alt=""></div>
+       </div>
+      </div>
+      <div class="reviews-block-wrap">
+       <div class="reviews-block">
+        <div class="reviews-main">
+         <div class="reviews-autor">
+          <div class="reviews-autor-img"><img src="img/reva2-4.png" alt=""></div>
+          <div class="reviews-autor-name">Анна <br>
+           Шорохова</div>
+         </div>
+         <div class="reviews-subtitle">Отличная вещь!!!</div>
+         <div class="reviews-text">Позавчера получила афганский казан. не откладывая в долгий ящик подготовила его к
+          использованию, собрала, что нашла в холодильнике и пошла готовить на костре. Через час получила прекрасное
+          мясо с овощами. Минимум мороки, максимум удовольствия.</div>
+        </div>
+        <div class="reviews-img"><img src="img/rev2-4.png" alt=""></div>
+       </div>
+      </div>
+     </div>
+     <a href="" class="btn reviews-btn">Оставить отзыв</a>
+    </div>
+   </div>
+   <div class="gift" id="gift">
+    <div class="container">
+     <h2 class="gift-title">Хотите заказать казан в подарок?</h2>
+     <div class="gift-subtitle">Упакуем Ваш казан в подарочную упаковку,
+      добавим Ваши поздравления</div>
+     <div class="gift-wrap">
+      <form class="gift-form">
+       <div class="gift-form-title">Оставьте заявку и сделайте подарок по специальной цене*</div>
+       <div class="gift-form-prize">
+        <div class="gift-form-prize-img"><img src="img/gift-prize.png" alt=""></div>
+        <div class="gift-form-prize-text">+ Бесплатный подбор</div>
+       </div>
+       <label class="gift-form-main">
+        <div class="gift-form-label">Введите ваш номер телефона:</div>
+        <input type="tel" class="gift-form-input" name="giftPhone" placeholder="+ 375 (__) ___ - __ - __" required>
+       </label>
+       <button class="btn gift-form-btn">Оставить заявку и узнать</button>
+       <div class="gift-form-small">*Специальные цены, на покупку в подарок</div>
+      </form>
+      <div class="gift-img"><img src="img/gift-img.png" alt=""></div>
+     </div>
+    </div>
+   </div>
+   <div class="how">
+    <div class="how-before"><img src="img/how-before.png" alt=""></div>
+    <div class="container">
+     <h2 class="how-title">Как мы работаем</h2>
+     <div class="how-subtitle">Всего 1 ваше действие и вы получите оригинальный
+      чугунный казан по отличной цене</div>
+     <div class="how-wrap">
+      <div class="how-block">
+       <div class="how-img"><img src="img/how1.png" alt="">
+        <div class="how-num">01</div>
+       </div>
+       <div class="how-text">
+        <div class="how-dop">Ваше действие</div>
+        <div class="how-name">Выбираете казан или заказываете подбор</div>
+        <div class="how-descr">С вами свяжется Ваш персональный
+         менеджер для оформления заказа</div>
+       </div>
+      </div>
+      <div class="how-block">
+       <div class="how-img"><img src="img/how2.png" alt="">
+        <div class="how-num">02</div>
+       </div>
+       <div class="how-text">
+        <div class="how-name">Доставка к конкретному
+         времени</div>
+        <div class="how-descr">Курьер доставит Ваш заказ “до дверей”. Доставка по РБ - в течение 1-го дня с момента
+         заказа, по Минску - за 4 часа.</div>
+       </div>
+      </div>
+      <div class="how-block">
+       <div class="how-img"><img src="img/how3.png" alt="">
+        <div class="how-num">03</div>
+       </div>
+       <div class="how-text">
+        <div class="how-name">Получаете и оплачиваете казан</div>
+        <div class="how-descr">Оплата производится после получения и проверки заказа</div>
+       </div>
+      </div>
+      <div class="how-block">
+       <div class="how-img"><img src="img/how4.png" alt="">
+        <div class="how-num">04</div>
+       </div>
+       <div class="how-text">
+        <div class="how-name">Наслаждаетесь вкусной готовкой на своем казане</div>
+        <div class="how-descr">Неповторимый вкус и новые
+         рецепты, вам обеспечены</div>
+       </div>
+      </div>
+     </div>
+     <a href="#popup:marquiz_5eb43090c9632900536fadcc" class="how-btn btn">Подобрать казан и получить скидку с
+      подарком</a>
+    </div>
+   </div>
+   <div class="questions">
+    <div class="questions-before"><img src="img/questions-before.png" alt=""></div>
+    <div class="questions-after"><img src="img/questions-after.png" alt=""></div>
+    <div class="container">
+     <h2 class="questions-title">Частые вопросы</h2>
+     <div class="questions-main">
+      <div class="questions-main-title">Как подготовить казан к первому использованию?</div>
+      <b>1.</b> Первым делом моем котелок и крышку моющим раствором и губкой изнутри и снаружи.
+      <br><br>
+      <b>2.</b> Наполняем котелок водой на две трети объема и ставим на огонь.
+      <br><br>
+      <b>3.</b> После того как, клапана начнут стравливать пар, кипятим на медленном огне еще 20 минут. Снимаем
+      афганский котелок с огня или просто выключаем газ и ждем, когда вода в нем остынет. В это время пар выходит из
+      клапанов, пока внутри совсем не прекратиться кипение. Можно ускорить процесс стравливания пара, осторожно
+      приподняв один из клапанов. Однако следует иметь в виду, что вы сами и ваша рука должна находится в некотором
+      отдалении от выхода пара, чтобы избежать ожогов.
+      <br><br>
+      <span style="color:rgb(238, 104, 13);">Внимание!</span> До тех пор, пока весь пар не выйдет из афганского казана,
+      нельзя пытаться поднять крышку.
+      Она крепко держится внутренним давлением и силовые попытки ее отодрать, приведут к несчастному случаю. Дождитесь,
+      пока пар не перестанет выходить через клапана, открутите винт и крышка сама легко поднимется.
+     </div>
+     <div class="questions-wrap">
+      <div class="questions-col">
+       <div class="questions-block">
+        <div class="questions-block-title">Как происходит доставка и оплата?</div>
+        <div class="questions-block-cont">
+         Доставка курьером до двери в любую точку Беларуси в течение 1 дня! Оплата при получении заказа.
+        </div>
+       </div>
+       <div class="questions-block">
+        <div class="questions-block-title">Сколько стоит доставка?</div>
+        <div class="questions-block-cont">
+         Стоимость и сроки доставки до вашего города, можно рассчитать позвонив нам по телефону или заполнив форму.
+        </div>
+       </div>
+       <div class="questions-block">
+        <div class="questions-block-title">Вы работаете с Юридическими лицами? Возможна ли оплата по счёту?</div>
+        <div class="questions-block-cont">
+         Да, мы работаем с юр.лицами, как розничными так и оптовыми партиями. Для получения более подробной информации
+         оставьте заявку на обратный звонок.
+        </div>
+       </div>
+      </div>
+      <div class="questions-col">
+       <div class="questions-block">
+        <div class="questions-block-title">Где можно вживую посмотреть казаны?</div>
+        <div class="questions-block-cont">
+         Мы находимся в городе Минске по адресу ул. Володько, д. 18, оф. 105а. Работаем с 9 до 21 без выходных.
+        </div>
+       </div>
+       <div class="questions-block">
+        <div class="questions-block-title">Какие гарантии Вы даёте?</div>
+        <div class="questions-block-cont">
+         Мы даем пожизненную гарантию, а также 100%-ю гарантию соответствия, это значит, что товар будет в точности как
+         описано на сайте и Вы будете им довольны. Кроме всего этого, Ваши положительные отзывы - наше заветное желание,
+         именно они - лучшая реклама. Поэтому будьте уверены - после покупки вы будете довольны! Вы можете проверить
+         товар до оплаты.
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="contacts">
+    <div id="map"></div>
+    <div class="contacts-cont">
+     <h2 class="contacts-title">Свяжитесь с нами любым способом</h2>
+     <div class="contacts-block">
+      <div class="contacts-block-img"><img src="img/contacts1.png" alt=""></div>
+      <div class="contacts-block-text">
+       <div class="contacts-block-top">Телефон</div>
+       <a href="tel:+375255020077" class="contacts-block-phone">+375 25 <b> 502-00-77</b></a>
+       <a href="" class="contacts-block-link">Заказать звонок</a>
+      </div>
+      <div class="contacts-block-soc">
+       <div class="header-soc">
+        <a href="https://t.me/Kazan_bel" class="header-soc-block" target="_blank"><img src="img/header-tg.png"
+          alt=""></a>
+        <a href="https://api.whatsapp.com/send?phone=375291275264" class="header-soc-block" target="_blank"><img
+          src="img/header-wa.png" alt=""></a>
+        <a href="viber://chat?number=+375291275264" class="header-soc-block" target="_blank"><img
+          src="img/header-viber.png" alt=""></a>
+       </div>
+      </div>
+     </div>
+     <div class="contacts-block">
+      <div class="contacts-block-img"><img src="img/contacts2.png" alt=""></div>
+      <div class="contacts-block-text">
+       <div class="contacts-block-top">Адрес точки самовывоза</div>
+       <div class="contacts-block-adress">Минск, ул. Володько д. 18, офис 105а <br> <a
+         href="mailto:night___life@mail.ru">night___life@mail.ru</a></div>
+       <div class="contacts-block-small">Заказы принимаем круглосуточно и без выходных</div>
+      </div>
+     </div>
+     <a href="#popup:marquiz_5eb43090c9632900536fadcc" class="btn contacts-btn">Подобрать казан</a>
+    </div>
+   </div>
+   <div class="footer">
+    <div class="container">
+     <div class="footer-wrap">
+      <div class="footer-logo"><img src="img/footer-logo.png" alt=""></div>
+      <div class="footer-menu">
+       <a class="footer-opt" href="">Опт</a>
+       <a class="footer-rekv" href="">Реквизиты</a>
+       <a class="footer-polit" href="">Политика конфиденциальности</a>
+      </div>
+      <a href="https://leadme.agency/" class="footer-leadme"><img src="img/footer-leadme.png" alt=""></a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="overlay overlay-rekv">
+  <div class="popup-close"><img src="img/popup-close.png" alt=""></div>
+  <div class="popup popup-rekv">
+   ИП Найдович Злата Павловна <br>
+   УНП 193359316 <br>
+   Свидетельство: 0773591 от 23.12.2019г. <br>
+   р/с BY37MTBK30130001093300057446 ЗАО «МТБАНК» BIC MTBKBY22
+  </div>
+ </div>
+ <div class="overlay overlay-polit">
+  <div class="popup-close"><img src="img/popup-close.png" alt=""></div>
+  <div class="popup popup-polit">
+   <div class="t390__descr t-descr t-descr_xs"><strong>Политика конфиденциальности:</strong> <br><br>
+    <strong>г. Минск 29 июня 2019 года</strong><br><br> Настоящая Политика конфиденциальности персональных данных (далее
+    – Политика конфиденциальности) действует в отношении всей информации, которую сайт, расположенный на доменном имени
+    <a href="https://kazanbel.by/">kazanbel.by</a>, может получить о Пользователе во время использования сайта.<br><br>
+    <strong>1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</strong><br><br> 1.1 В настоящей Политике конфиденциальности используются следующие
+    термины:<br><br> 1.1.1. Администрация сайта <a href="https://kazanbel.by/">kazanbel.by</a> («далее – Администрация
+    сайта») – уполномоченные сотрудники на управление сайтом, действующие от имени <a
+     href="https://kazanbel.by/">kazanbel.by</a>, которые организуют и (или) осуществляет обработку персональных данных,
+    а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия
+    (операции), совершаемые с персональными данными.<br><br> 1.1.2. «Персональные данные» — любая информация,
+    относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных
+    данных).<br><br> 1.1.3. «Обработка персональных данных» — любое действие (операция) или совокупность действий
+    (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными
+    данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение,
+    использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление,
+    уничтожение персональных данных.<br><br> 1.1.4. «Конфиденциальность персональных данных» — обязательное для
+    соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их
+    распространения без согласия субъекта персональных данных или наличия иного законного основания.<br><br> 1.1.5.
+    «Пользователь сайта (далее Пользователь)» – лицо, имеющее доступ к сайту, посредством сети Интернет и использующее
+    сайт.<br><br> 1.1.6. «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере
+    пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке
+    открыть страницу соответствующего сайта.<br><br> 1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной
+    сети, построенной по протоколу IP.<br><br> <strong>2. ОБЩИЕ ПОЛОЖЕНИЯ</strong><br><br> 2.1. Использование
+    Пользователем сайта означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных
+    данных Пользователя.<br><br> 2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен
+    прекратить использование сайта.<br><br> 2.3.Настоящая Политика конфиденциальности применяется только к сайту. Сайт
+    не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам,
+    доступным на сайте.<br><br> 2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых
+    Пользователем сайта.<br><br> <strong>3. ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ</strong><br><br> 3.1. Настоящая Политика
+    конфиденциальности устанавливает обязательства Администрации сайта по неразглашению и обеспечению режима защиты
+    конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации сайта при
+    регистрации на сайте.<br><br> 3.2. Персональные данные, разрешенные к обработке в рамках настоящей Политики
+    конфиденциальности, предоставляются Пользователем путем заполнения контактной формы на сайте <a
+     href="https://kazanbel.by/">kazanbel.by</a> и включают в себя следующую информацию:<br><br> 3.2.1. фамилию, имя
+    Пользователя;<br><br> 3.2.2. контактный телефон Пользователя;<br><br> 3.2.3. адрес электронной почты
+    (e-mail);<br><br> 3.3. <a href="https://kazanbel.by/">kazanbel.by</a> защищает Данные, которые автоматически
+    передаются в процессе просмотра рекламных блоков и при посещении страниц, на которых установлен статистический
+    скрипт системы («пиксель»): <br> IP адрес; <br> информация из cookies; <br> информация о браузере (или иной
+    программе, которая осуществляет доступ к показу рекламы); <br> время доступа; <br> адрес страницы, на которой
+    расположен рекламный блок; <br> реферер (адрес предыдущей страницы). <br><br>3.3.1. Отключение cookies может повлечь
+    невозможность доступа к частям сайта <a href="https://kazanbel.by/">kazanbel.by</a>, требующим авторизации.<br><br>
+    3.3.2. <a href="https://kazanbel.by/">kazanbel.by</a> осуществляет сбор статистики об IP-адресах своих посетителей.
+    Данная информация используется с целью выявления и решения технических проблем.<br><br> 3.4. Любая иная персональная
+    информация неоговоренная выше (используемые браузеры и операционные системы и т.д.) подлежит надежному хранению и
+    нераспространению, за исключением случаев, предусмотренных в п.п. 5.2. и 5.3. настоящей Политики
+    конфиденциальности.<br><br> <strong>4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ</strong><br><br> 4.1.
+    Персональные данные Пользователя Администрация сайта <a href="https://kazanbel.by/">kazanbel.by</a> может
+    использовать в целях:<br><br> 4.1.1. Идентификации Пользователя, заполнившего контактную форму на сайте <a
+     href="https://kazanbel.by/">kazanbel.by</a>.<br><br> 4.1.2. Предоставления Пользователю доступа к
+    персонализированным ресурсам сайта <a href="https://kazanbel.by/">kazanbel.by</a>.<br><br> 4.1.3. Установления с
+    Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования сайта <a
+     href="https://kazanbel.by/">kazanbel.by</a>, оказания услуг, обработки запросов и заявок от Пользователя.<br><br>
+    4.1.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.<br><br>
+    4.1.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.<br><br> 4.1.6.
+    Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем связанных с
+    использованием сайта <a href="https://kazanbel.by/">kazanbel.by</a>.<br><br> 4.1.7. Предоставления Пользователю с
+    его согласия, обновлений продукции, специальных предложений, информации о ценах, новостной рассылки и иных сведений
+    от имени <a href="https://kazanbel.by/">kazanbel.by</a> или от имени партнеров <a
+     href="https://kazanbel.by/">kazanbel.by</a>.<br><br> 4.1.8. Осуществления рекламной деятельности с согласия
+    Пользователя.<br><br> 4.1.9. Предоставления доступа Пользователю на сайты или сервисы партнеров <a
+     href="https://kazanbel.by/">kazanbel.by</a> с целью получения продуктов, обновлений и услуг.<br><br> <strong>5.
+     СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ</strong><br><br> 5.1. Обработка персональных данных Пользователя
+    осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных
+    данных с использованием средств автоматизации или без использования таких средств.<br><br> 5.2. Пользователь
+    соглашается с тем, что Администрация сайта вправе передавать персональные данные третьим лицам, в частности,
+    курьерским службам, организациями почтовой связи, операторам электросвязи, исключительно в целях выполнения заказа
+    Пользователя, оформленного на сайте <a href="https://kazanbel.by/">kazanbel.by</a>.<br><br> 5.3. Персональные данные
+    Пользователя могут быть переданы уполномоченным органам государственной власти Республики Беларусь только по
+    основаниям и в порядке, установленным законодательством Республики Беларусь.<br><br> 5.4. При утрате или разглашении
+    персональных данных Администрация сайта информирует Пользователя об утрате или разглашении персональных
+    данных.<br><br> 5.5. Администрация сайта принимает необходимые организационные и технические меры для защиты
+    персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования,
+    копирования, распространения, а также от иных неправомерных действий третьих лиц.<br><br> 5.6. Администрация сайта
+    совместно с Пользователем принимает все необходимые меры по предотвращению убытков или иных отрицательных
+    последствий, вызванных утратой или разглашением персональных данных Пользователя.<br><br> <strong>6. ОБЯЗАТЕЛЬСТВА
+     СТОРОН</strong><br><br> 6.1. Пользователь обязан:<br><br> 6.1.1. Предоставить информацию о персональных данных,
+    необходимую для пользования сайтом <a href="https://kazanbel.by/">kazanbel.by</a>.<br><br> 6.1.2. Обновить,
+    дополнить предоставленную информацию о персональных данных в случае изменения данной информации.<br><br> 6.2.
+    Администрация сайта обязана:<br><br> 6.2.1. Использовать полученную информацию исключительно для целей, указанных в
+    п. 4 настоящей Политики конфиденциальности.<br><br> 6.2.2. Обеспечить хранение конфиденциальной информации в тайне,
+    не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен,
+    опубликование, либо разглашение иными возможными способами переданных персональных данных Пользователя, за
+    исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.<br><br> 6.2.3. Принимать меры предосторожности
+    для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемого для защиты
+    такого рода информации в существующем деловом обороте.<br><br> 6.2.4. Осуществить блокирование персональных данных,
+    относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя или его законного
+    представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае
+    выявления недостоверных персональных данных или неправомерных действий.<br><br> <strong>7. ОТВЕТСТВЕННОСТЬ
+     СТОРОН</strong><br><br> 7.1. Администрация сайта, не исполнившая свои обязательства, несёт ответственность за
+    убытки, понесенные Пользователем в связи с неправомерным использованием персональных данных, в соответствии с
+    законодательством Республики Беларусь, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей
+    Политики Конфиденциальности.<br><br> 7.2. В случае утраты или разглашения Конфиденциальной информации Администрация
+    сайта не несет ответственность, если данная конфиденциальная информация:<br><br> 7.2.1. Стала публичным достоянием
+    до ее утраты или разглашения.<br><br> 7.2.2. Была получена от третьей стороны до момента ее получения Администрацией
+    сайта.<br><br> 7.2.3. Была разглашена с согласия Пользователя.<br><br> <strong>8. РАЗРЕШЕНИЕ СПОРОВ</strong><br><br>
+    8.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем сайта <a
+     href="https://kazanbel.by/">kazanbel.by</a> и Администрацией сайта, обязательным является предъявление претензии
+    (письменного предложения о добровольном урегулировании спора).<br><br> 8.2 .Получатель претензии в течение 30
+    календарных дней со дня получения претензии, письменно уведомляет заявителя претензии о результатах рассмотрения
+    претензии.<br><br> 8.3. При не достижении соглашения спор будет передан на рассмотрение в судебный орган в
+    соответствии с действующим законодательством Республики Беларусь.<br><br> 8.4. К настоящей Политике
+    конфиденциальности и отношениям между Пользователем и Администрацией сайта применяется действующее законодательство
+    Республики Беларусь.<br><br> <strong>9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</strong><br><br> 9.1. Администрация сайта вправе
+    вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.<br><br> 9.2. Новая Политика
+    конфиденциальности вступает в силу с момента ее размещения на сайте <a href="https://kazanbel.by/">kazanbel.by</a>,
+    если иное не предусмотрено новой редакцией Политики конфиденциальности.<br><br> 9.3. Все предложения или вопросы по
+    настоящей Политике конфиденциальности следует сообщать по адресу электронной почты <a
+     href="mailto:night___life@mail.ru">night___life@mail.ru</a> <br><br> 9.4. Действующая Политика конфиденциальности
+    размещена на странице по адресу <a href="https://kazanbel.by/">kazanbel.by</a>. <br></div>
+  </div>
+ </div>
+ <div class="overlay overlay-call overlay-call1">
+  <div class="popup-close"><img src="img/popup-close.png" alt=""></div>
+  <div class="popup popup-call">
+   <div class="popup-call-cont">
+    <div class="popup-call-title">Отправьте ваш номер
+     телефона менеджеру</div>
+    <div class="popup-call-subtitle">Менеджер Злата, свяжется с вами
+     в течение 15 минут и ответит на ваши вопросы</div>
+    <form class="popup-call-form">
+     <label>
+      <span class="popup-call-label">Ваш номер телефона:</span>
+      <input type="tel" class="popup-call-input" placeholder="+ 375 (__) ___-__-__" required>
+      <button class="popup-call-btn btn">Отправить номер телефона</button>
+      <div class="popup-call-small">Наш менеджер свяжется с Вами в течение
+       часа и ответит на все Ваши вопросы</div>
+     </label>
+    </form>
+   </div>
+   <div class="popup-call-img"><img src="img/popup-call-img.png" alt=""></div>
+  </div>
+ </div>
+ <div class="overlay overlay-call overlay-call2">
+  <div class="popup-close"><img src="img/popup-close.png" alt=""></div>
+  <div class="popup popup-call">
+   <div class="popup-call-cont">
+    <div class="popup-call-title">Оставьте заявку на покупку казана в рассрочку</div>
+    <div class="popup-call-subtitle">Менеджер Злата, свяжется с вами
+     в течение 15 минут и ответит на ваши вопросы</div>
+    <form class="popup-call-form">
+     <label>
+      <span class="popup-call-label">Ваш номер телефона:</span>
+      <input type="tel" class="popup-call-input" placeholder="+ 375 (__) ___-__-__" required>
+      <button class="popup-call-btn btn">Отправить номер телефона</button>
+      <div class="popup-call-small">Наш менеджер свяжется с Вами в течение
+       часа и ответит на все Ваши вопросы</div>
+     </label>
+    </form>
+   </div>
+   <div class="popup-call-img"><img src="img/popup-call2.png" alt=""></div>
+  </div>
+ </div>
+ <div class="overlay overlay-call overlay-call3">
+  <div class="popup-close"><img src="img/popup-close.png" alt=""></div>
+  <div class="popup popup-call">
+   <div class="popup-call-cont">
+    <div class="popup-call-title">Получите оптовый прайс
+     за 5 минут</div>
+    <div class="popup-call-subtitle">Отправьте свой номер, наш менеджер
+     перезвонит вам и уточнит куда удобнее прислать вам прайс </div>
+    <form class="popup-call-form">
+     <label>
+      <span class="popup-call-label">Ваш номер телефона:</span>
+      <input type="tel" class="popup-call-input" placeholder="+ 375 (__) ___-__-__" required>
+      <button class="popup-call-btn btn">Отправить номер телефона</button>
+      <div class="popup-call-small">Наш менеджер свяжется с Вами в течение
+       часа и ответит на все Ваши вопросы</div>
+     </label>
+    </form>
+   </div>
+   <div class="popup-call-img"><img src="img/popup-call3.png" alt=""></div>
+  </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="slick/slick.min.js"></script>
+ <script src="js/jquery.inputmask.js"></script>
+ <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+ <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"
+  type="text/javascript"></script>
+ <!-- Marquiz script start -->
+ <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+   Marquiz.init({
+    id: '5eb43090c9632900536fadcc',
+    autoOpen: false,
+    autoOpenFreq: 'once',
+    openOnExit: false
+   });
+  });
+ </script>
+ <!-- Marquiz script end -->
+ <script src="//code.jivosite.com/widget/7VEC7mYsof" async></script>
+ <script src="js/main.js"></script>
+</body>
+
+</html>

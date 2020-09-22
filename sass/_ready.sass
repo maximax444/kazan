@@ -1,0 +1,213 @@
+.ready
+ padding: 75px 0
+ background: #F9F9F9
+ position: relative
+ &-before
+  position: absolute
+  left: 0
+  top: 0
+ &-title
+  font-weight: bold
+  font-size: 35px
+  margin-top: 0
+  margin-bottom: 45px
+  line-height: 51px
+  text-align: center
+ &-subtitle
+  display: flex
+  align-items: center
+  justify-content: center
+  font-weight: 500
+  font-size: 16px
+  line-height: 25px
+  margin-bottom: 65px
+ &-more
+  margin: 0 auto
+  width: 215px
+  height: 62px
+  margin-top: 50px
+ &-btn
+  margin: 0 auto
+  margin-top: 35px
+  width: 300px
+  height: 58px
+ &-wrap
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 30px
+ &-block
+  height: 680px
+  background: #FFFFFF
+  border: 1px solid #EDEDED
+  border-radius: 5px
+  padding: 19px
+  display: none
+ &-img
+  height: 180px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 20px
+  img
+   max-width: 100%
+   max-height: 100%
+ &-name
+  font-weight: bold
+  font-size: 17px
+  line-height: 22px
+  margin-bottom: 9px
+ &-price
+  background: #F9F9F9
+  border-radius: 5px
+  margin-bottom: 24px
+  width: 190px
+  max-width: 100%
+  height: 60px
+  padding: 10px 14px
+  font-weight: 500
+  font-size: 12px
+  line-height: 22px
+  span
+   text-decoration: line-through
+  &2
+   display: flex
+   justify-content: space-between
+   font-size: 24px
+   line-height: 22px
+   &-block
+    max-width: 49%
+    &2
+     opacity: 0.5
+   span
+    text-decoration: line-through
+   &-top
+    font-size: 9px
+    line-height: 10px
+    height: 20px
+ &-el
+  display: flex
+  align-items: center
+  &-title
+   margin-bottom: 9px
+   font-weight: bold
+   text-transform: uppercase
+   font-size: 12px
+   line-height: 10px
+  &-img
+   width: 12px
+   margin-right: 8px
+   display: flex
+  &-text
+   width: calc(100% - 20px)
+   font-size: 12px
+   line-height: 21px
+   b
+    font-weight: 500
+ &-bottom
+  display: flex
+  justify-content: space-between
+  padding-top: 14px
+  &-btn
+   width: 110px
+   height: 42px
+   font-size: 12px
+   font-weight: 400
+   &-o
+    width: 110px
+    height: 42px
+    font-size: 12px
+    font-weight: 400
+.add
+ padding: 45px 0
+ &-title
+  font-size: 30px
+  text-align: center
+  margin-bottom: 40px
+ &-wrap
+  display: flex
+  justify-content: center
+ &-block
+  width: 330px
+  margin: 0 10px
+ &-cont
+  background: #F9F9F9
+  border-radius: 5px
+  padding: 25px
+ &-name
+  font-size: 22px
+  font-weight: 500
+  margin-bottom: 10px
+ &-descr
+  font-size: 14px
+ &-bottom
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 20px
+  margin-bottom: -48px
+ &-btn
+  width: 126px
+  height: 46px
+  margin: 0 5px
+ &-price
+  margin: 0 5px
+  width: 126px
+  height: 46px
+  background: #FFFFFF
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1)
+  border-radius: 100px
+  font-weight: 500
+  line-height: 46px
+  text-align: center
+  font-size: 18px
+ &-img
+  height: 400px
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  img
+   max-height: 100%
+@media(max-width: 1199px)
+ .ready
+  &-block
+   width: 235px
+   height: auto
+  &-before
+   display: none
+  &-wrap
+   grid-gap: 10px 15px
+@media(max-width: 991px)
+ .ready
+  &-block
+   width: auto
+  &-wrap
+   grid-template-columns: repeat(2, 1fr)
+ .add
+  &-wrap
+   flex-direction: column
+  &-img
+   height: 40px
+  &-block
+   margin: 0 auto
+   &:nth-child(2)
+    order: -1
+    .add-img
+     height: 400px
+@media(max-width: 575px)
+ .ready
+  padding: 45px 0
+  &-title
+   font-size: 24px
+   line-height: normal
+  &-subtitle
+   font-size: 12px
+   line-height: normal
+   margin-bottom: 25px
+  &-wrap
+   grid-template-columns: 1fr
+ .add
+  &-title
+   font-size: 22px
+  &-block
+   max-width: 100%

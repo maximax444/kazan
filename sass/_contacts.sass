@@ -27,7 +27,7 @@
   position: absolute
   z-index: 3
   top: 100px
-  left: 400px
+  left: calc((100% - 1170px) / 2)
  &-title
   margin-top: 0
   margin-bottom: 25px
@@ -81,7 +81,11 @@
 @media(max-width: 1199px)
  .contacts
   &-cont
-   left: 100px
+   left: calc((100% - 980px) / 2)
+@media(max-width: 991px)
+ .contacts
+  &-cont
+   left: calc((100% - 750px) / 2)
 @media(max-width: 767px)
  .contacts
   height: auto

@@ -1,0 +1,113 @@
+.overlay
+ position: fixed
+ overflow-y: scroll
+ top: 0
+ left: 0
+ width: 100vw
+ height: 100vh
+ background-color: rgba(#000, 0.7)
+ z-index: 10
+ display: none
+ &-active
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 40px 0
+.popup
+ background: #FFFFFF
+ border: 1px solid #EDEDED
+ border-radius: 8px
+ width: 895px
+ max-width: 95%
+ &-close
+  margin: 0 auto
+  margin-bottom: 30px
+  width: 58px
+  height: 58px
+  min-height: 58px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  background: rgba(255, 255, 255, 0.29)
+  &:hover
+   cursor: pointer
+   background: rgba(255, 255, 255, 0.39)
+ &-polit
+  padding: 25px
+ &-rekv
+  text-align: center
+  padding: 25px
+  width: 450px
+ &-call
+  display: flex
+  justify-content: space-between
+  align-items: center
+  overflow: hidden
+  height: 670px
+  &-img
+   width: 45%
+  &-cont
+   width: 55%
+   padding: 80px 70px
+  &-title
+   font-weight: bold
+   font-size: 25px
+   line-height: 30px
+   margin-bottom: 25px
+  &-subtitle
+   font-size: 14px
+   margin-bottom: 50px
+   opacity: 0.5
+   line-height: 21px
+  &-form
+   width: 310px
+  &-label
+   font-size: 14px
+   line-height: 30px
+  &-input
+   width: 307px
+   height: 69px
+   background: #FFFFFF
+   border: 1px solid #E2E2E2
+   border-radius: 4px
+   margin-bottom: 38px
+   padding: 0 30px
+   font-size: 18px
+   font-family: Geometria
+   letter-spacing: 0.05em
+   &:focus
+    outline: none
+  &-btn
+   width: 307px
+   height: 62px
+   margin-bottom: 22px
+   border: 0
+   cursor: pointer
+  &-small
+   max-width: 280px
+   margin: 0 auto
+   text-align: center
+   font-size: 12px
+   line-height: 21px
+   opacity: 0.5
+@media(max-width: 767px)
+ .popup
+  &-call
+   display: block
+   height: auto
+   &-cont
+    width: 100%
+   &-img
+    display: none
+@media(max-width: 575px)
+ .popup
+  &-polit, &-rekv
+   padding: 15px
+  &-call
+   &-cont
+    padding: 15px
+   &-subtitle
+    margin-bottom: 20px
+   &-input, &-btn, &-form
+    max-width: 100%

@@ -1,1 +1,241 @@
 .bake
+ padding: 75px 0
+ &-title
+  margin-top: 0
+  text-align: center
+  margin-bottom: 150px
+  font-size: 30px
+  line-height: 45px
+  span
+   color: #98C75E
+ &-wrap
+  display: flex
+  justify-content: space-between
+ &-block
+  width: 280px
+  background: #F9F9F9
+  border-radius: 5px
+  padding: 15px
+  max-width: 24%
+  position: relative
+ &-img
+  width: 212px
+  margin: 0 auto
+  margin-top: -115px
+  margin-bottom: 20px
+ &-name
+  font-weight: bold
+  font-size: 23px
+  line-height: 45px
+  text-align: center
+  margin-bottom: 12px
+ &-el
+  display: flex
+  align-items: center
+  font-size: 16px
+  margin-bottom: 5px
+  &-start
+   width: 60%
+  span
+   width: 10%
+   text-align: center
+   color: rgba(0, 0, 0, 0.37)
+  &-end
+   width: 30%
+   text-align: right
+   font-weight: 300
+ &-info
+  height: 165px
+  margin-bottom: 25px
+ &-bottom
+  display: flex
+  align-items: center
+  justify-content: space-between
+ &-btn
+  width: 116px
+  height: 43px
+  &::before
+   display: none
+ &-price
+  width: 116px
+  height: 43px
+  background: #FFFFFF
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1)
+  border-radius: 100px
+  text-align: center
+  line-height: 41px
+  font-weight: 500
+  font-size: 18px
+ &-descr
+  font-size: 13px
+  height: 115px
+  margin-bottom: 20px
+  b
+   display: block
+   margin-bottom: 3px
+ &-arrow
+  position: absolute
+  top: -15px
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background: linear-gradient(180deg, #DB6A02 0%, #FFAB5E 98.96%)
+  z-index: 2
+  cursor: pointer
+ &-prev
+  left: 20px
+  transform: rotate(180deg)
+  &4
+   bottom: 0
+   top: auto
+   left: 30%
+ &-next
+  right: 20px
+  &4
+   right: 30%
+   bottom: 0
+   top: auto
+ &-features
+  border-top: 1px solid rgba(0, 0, 0, 0.1)
+  padding-top: 40px
+  margin-top: 40px
+  padding-bottom: 50px
+  &-wrap
+   display: flex
+   flex-wrap: wrap
+  &-title
+   font-weight: bold
+   font-size: 25px
+   line-height: 25px
+   margin-bottom: 30px
+  &-block
+   width: 470px
+   max-width: 49%
+   font-size: 22px
+   line-height: 25px
+   display: flex
+   align-items: center
+   margin-bottom: 20px
+  &-img
+   width: 36px
+   margin-right: 6px
+   text-align: center
+ &-man
+  display: flex
+  justify-content: space-between
+  &-slider
+   width: 300px
+   height: 300px
+  &-cont
+   width: 720px
+  &-title
+   font-weight: bold
+   font-size: 25px
+   line-height: 45px
+  &-text
+   font-size: 14px
+   line-height: 22px
+   margin-bottom: 20px
+  &-main
+   display: flex
+   align-items: center
+  &-features
+   &-title
+    margin-bottom: 25px
+    font-weight: 500
+    font-size: 18px
+    line-height: 25px
+   &-wrap
+    display: flex
+    flex-wrap: wrap
+   &-block
+    width: 50%
+    font-weight: 300
+    font-size: 14px
+    line-height: 22px
+    display: flex
+    margin-bottom: 10px
+   &-img
+    width: 35px
+    margin-right: 5px
+    text-align: center
+  &-main
+   display: flex
+   align-items: center
+   margin-bottom: 25px
+  &-el
+   font-size: 12px
+   margin-right: 10px
+   span
+    font-size: 24px
+    display: block
+  &-btn
+   width: 110px
+   height: 42px
+   font-size: 14px
+   font-weight: 400
+   margin: 0 10px
+   &-o
+    width: 110px
+    height: 42px
+@media(max-width: 1199px)
+ .bake
+  &-name
+   font-size: 22px
+  &-info
+   height: 200px
+@media(max-width: 991px)
+ .bake
+  &-wrap
+   flex-wrap: wrap
+  &-block
+   max-width: 49%
+   margin-bottom: 150px
+  &-features
+   margin-top: -80px
+@media(max-width: 767px)
+ .bake
+  &-man
+   flex-wrap: wrap
+@media(max-width: 575px)
+ .bake
+  padding: 40px 0
+  &-title
+   font-size: 22px
+   margin-bottom: 120px
+  &-block
+   max-width: 100%
+   margin: 0 auto
+   margin-bottom: 120px
+  &-info, &-descr
+   height: auto
+  &-features
+   &-title
+    font-size: 18px
+   &-wrap
+    display: block
+   &-block
+    font-size: 12px
+    line-height: normal
+    max-width: 100%
+    margin-bottom: 8px
+   &-img
+    width: 22px
+    img
+     max-width: 100%
+  &-man
+   &-slider
+    margin-bottom: 20px
+    margin: 0 auto
+   &-cont
+    width: 100%
+   &-features
+    &-block
+     width: 100%
+   &-main
+    flex-wrap: wrap
+   &-el
+    margin-bottom: 10px
